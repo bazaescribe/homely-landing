@@ -10,3 +10,11 @@ $(window).scroll(function() {
 function message(){
     alert("k onda k pez");
 }
+
+function openMenu(){
+  document.getElementById("menu-screen").style.display = "block";
+}
+
+function closeMenu(){
+  document.getElementById("menu-screen").style.display = "none";
+}

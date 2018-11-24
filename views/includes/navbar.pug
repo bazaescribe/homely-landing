@@ -3,7 +3,7 @@
     img(src="../images/badges/jelpmi.png", alt="")
   .navbar
     .container
-      .burger(style='')
+      .burger(onclick="openMenu()")
         img(src='images/icons/menu_open.png', alt='Homely')
       .logo(style='')
         a(href='/')
@@ -15,6 +15,23 @@
         a.menu-item-main(href='#') Quiero un servicio
       .shortcut(style='')
         img.logo(src='images/icons/clean.png', alt='Homely')
+
+.screen#menu-screen
+  #menu-box
+    .menu-box-navigation
+      .burger(onclick="closeMenu()")
+        img(src='images/icons/menu_close.png', alt='Homely')
+      a(href="/")
+        .logo
+          img.logo(src='images/logos/homely.png', alt='Homely')
+    a(href="https://servicios.jelpmi.mx")
+      h4 Quiero un servicio.
+    a(href="/ser-keeper")
+      h4 Quiero trabajar.
+    a(href="/office")
+      h4 Servicios para oficina.
+    a(href="/perks")
+      h4 Beneficios del servicio.
 
 script
     include ../../public/javascripts/visuals.js
