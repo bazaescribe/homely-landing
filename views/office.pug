@@ -1,0 +1,96 @@
+doctype html
+html(lang='en', dir='ltr')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Homely - Pásale a lo barrido
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel='stylesheet', href='stylesheets/cochinero.css')
+    link(rel='shortcut icon', href='images/icons/favicon.png')
+  body
+    include includes/navbar-pro
+
+    #hero-pro.hero.d-flex
+      .container
+        #content
+          div
+            div
+              h1 Un lugar como el hogar.
+              h6 Sin importar el tamaño de tu empresa, déjanos la limpieza a nosotros.
+            div(style='margin-top: 20px;')
+              button.btn.btn-alt Agenda un servicio
+              button.btn.btn-alt-pro Contacta a un asesor
+          .badge
+            img(src='images/badges/lugar-yellow.png', alt='Un lugar como el hogar')
+    .container.section
+      .row
+        .col-md-4.infocard
+          .image
+          div
+            h4 Factura tus servicios.
+            p
+              | Podrás facturar todos y cada uno de los servicios que contrates a través de la plataforma.
+        .col-md-4.infocard
+          .image
+          div
+            h4 Keepers independientes.
+            p
+              | Sin contratos ni responsabilidades adicionales. Todos los keeepers cuentan con seguro de gastos médicos.
+        .col-md-4.infocard
+          .image
+          div
+            h4 Servicios asegurados.
+            p
+              | Para tu tranquilidad, todos los servicios contratados dentro de la plataforma cuentan con un seguro de hasta 1 MDP.
+    .bg-light
+      .container.section
+        .row
+          .col-md-12
+            div
+              h3 Ellos ya confían en nosotros.
+              p
+                | Podrás facturar todos y cada uno de los servicios que contrates a través de la plataforma.
+        .row
+          .col-md-12
+            .logo-strip
+              img(src='images/logos/moronas.png', alt='')
+              img(src='images/logos/greenpeace.png', alt='')
+              img(src='images/logos/dentalia.png', alt='')
+              img(src='images/logos/victoria147.png', alt='')
+              img(src='images/logos/23.png', alt='')
+    .container.section
+      .row
+        .col-md-12
+          h3 El servicio que necesitas.
+          p
+            | Sin importar el giro ni el tamaño de tu empresa, con nosotros encontrarás un servicio que se ajuste a tus necesidades, desde un servicio por semana hasta personal que esté en tu oficina todo el tiempo que lo requieran.
+      .row
+        .col-md-6.offercard
+          .image
+          h4 PyMEs y Startups
+          ul
+            li Desde 3 horas a la semana.
+            li Ólvidate de buscar personal de confianza.
+            li Conserva a tu keeper el tiempo que la necesitas.
+            li Promociones y descuentos para tus empleados.
+          button.btn.btn-main Cotiza tu servicio
+        .col-md-6.offercard
+          .image
+          h4 Corporativos
+          ul
+            li A partir de 80 horas a la semana.
+            li Todo el personal que necesites.
+            li Precio preferente.
+            li Atención personalizada.
+          button.btn.btn-main Contacta un asesor
+    .container.section.poster.bg-dark
+      .row
+        .col-md-12
+          h2 ¿Tienes un coworking?
+          h6 
+            | Podemos ofrecerte un paquete de servicios que perfecto para ti y tus socios.
+          br
+          button.btn.btn-alt Ver más
+
+    include includes/footer
+    

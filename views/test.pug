@@ -1,0 +1,36 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Homely - Pásale a lo barrido
+		link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+		link(rel='stylesheet', href='stylesheets/cochinero.css')
+		link(rel='shortcut icon', href='images/icons/favicon.png')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
+	
+	body(onload="mixpanel.track('Index visited');")
+		script(src='https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDQSkVVrZ1BMsG10-44vN0aXJQerFQZkAw', type='text/javascript')
+
+		include includes/navbar.pug    
+
+		br
+		br
+		br
+		br
+		br
+
+		.container
+			h1 Hola
+			input(type='text')#searchTextField
+
+		script(type='text/javascript').
+			function initialize() {
+				var input = document.getElementById('searchTextField');
+				var options = {
+					types: ['(regions)'],
+					componentRestrictions: {country: 'mx'}
+				};
+				var autocomplete = new google.maps.places.Autocomplete(input, options);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);

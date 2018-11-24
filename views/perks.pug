@@ -1,0 +1,109 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Homely - Pásale a lo barrido
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel='stylesheet', href='stylesheets/cochinero.css')
+    link(rel='shortcut icon', href='images/icons/favicon.png')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
+
+  body
+    include includes/navbar
+
+    .container-fluid.bg-light.section-hero
+      .row
+        .col-md-6.d-flex.align-items-center.info
+          div
+            h2 Mucho más que sólo limpiar tu casa.
+            p  Regístrate en linea solicita una entrevista al 7098-2559 y comienza tu proceso de admisión.
+            button.btn.btn-main Regístrate ahora
+        .col-md-6.image(style="background-image: url('images/photos/perks-hero.jpg')")
+
+    .container.section
+      .row
+        .col-md-6.infocard
+          .image(style="background-image: url('images/photos/perks-broken.jpg')")
+          div
+            h4 Servicios asegurados.
+            p
+              | Para tu tranquilidad, todos los servicios contratados dentro de la plataforma cuentan con un seguro de hasta 1MDP.
+        .col-md-6.infocard
+          .image(style="background-image: url('images/photos/perks-mom.jpg')")
+          div
+            h4 Empodera personas.
+            p
+              | Más del 90% de los keepers han reportado cambios significativos en su entorno económico, familiar y personal.
+
+    .container.section
+      .row
+        .col-md-4
+          img(src="images/icons/healt.png", style="width: 30%;", alt="")
+          br
+          h4 Pagos seguros.
+          p  Tus pagos son procesados con los estándares más altos de seguridad.
+        .col-md-4
+          img(src="images/icons/time.png", style="width: 30%;", alt="")
+          br
+          h4 Atención personalizada.
+          p  Nuestro equipo está disponible a ayudarte en lo que necesites.
+        .col-md-4
+          img(src="images/icons/money.png", style="width: 30%;", alt="")
+          br
+          h4 Keepers confiables.
+          p  Sólo el 20% de los solicitantes logran aprobar nuestros filtros de selección.
+
+    .section.bg-cream
+      .container
+        .row.d-flex.align-items-center
+          .col-md-8
+            h2 
+              | Gana hasta $
+              span#number 11,840
+              |  mensuales.
+            h6 Puedes lograr estos ingresos trabajando... 
+            br
+            select(name="hours")
+              option(value=3) 3 horas diarias
+              option(value=4) 4 horas diarias
+              option(value=5) 5 horas diarias
+              option(value=6) 6 horas diarias
+              option(value=7) 7 horas diarias
+              option(value=8) 8 horas diarias
+            img(src="images/icons/multiplication.png", alt="", style="margin: 12px;")
+            select(name="days")
+              option(value=1) 1 día a la semana
+              option(value=2) 2 días a la semana
+              option(value=3) 3 días a la semana
+              option(value=4) 4 días a la semana
+              option(value=5) 5 días a la semana
+              option(value=6) 6 días a la semana
+              option(value=7) 7 días a la semana
+          .col-md-4
+            img(src="images/photos/keeper-hi.png", alt="Keeper saludando", style="width: 100%")
+    
+    .container.section
+      .row
+        .col-md-6
+          h3  ¡Reune tus documentos!
+          br
+          ul
+            li Acta de nacimiento.
+            li Identificación oficial.
+            li Comprobante de domicilio.
+            li Carta de no antecedentes penales.
+            li Dos cartas de recomendación.
+            li Cuenta bancaria (Para recibir tus pagos).
+        .col-md-6 
+          h3 Realiza tu examen de confianza.
+          br
+          p  El examen de confianza que desarrollamos en JelpMi! nos ayuda a garantizar seguridad para ti y tus clientes en cada uno de los servicios que prestes en la plataforma.
+          img(src="images/badges/sketch-1.png", alt="")
+
+    .container
+      .row.poster.bg-light
+        .col-md-8
+        .col-md-4
+
+    include includes/footer.pug    
