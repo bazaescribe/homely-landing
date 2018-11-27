@@ -1,9 +1,14 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 280) {
-      $("#info-banner").addClass("banner-hide");
+    if (scroll >= 80) {
+      $("#mobile").addClass("scrolled-mobile");
+      document.getElementById("logo-mobile").src="images/logos/homely.svg";
+      document.getElementById("menu-button").src="images/icons/plusAlt.svg";
+      console.log("I'm helping");
     }else {
-      $("#info-banner").removeClass("banner-hide");
+      $("#mobile").removeClass("scrolled-mobile");
+      document.getElementById("logo-mobile").src="images/logos/homely-cream.svg";
+      document.getElementById("menu-button").src="images/icons/plus.svg";
     }
 });
 
@@ -12,7 +17,8 @@ function message(){
 }
 
 function openMenu(){
-  document.getElementById("menu-screen").style.display = "block";
+  document.getElementById("mobile").style.background = "var(--color-indigo)";
+  console.log("quack")
 }
 
 function closeMenu(){

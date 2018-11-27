@@ -40,30 +40,30 @@ html
           h4 Depósitos puntuales cada semana.
           p  Trabaja con la certeza de que siempre recibiras tu dinero de manera segura en tu cuenta bancaria.
 
-    .section.bg-cream
+    .section.bg-cream(style="background-image: url('images/bgs/pattern-1.png'); background-size: cover;")
       .container
         .row.d-flex.align-items-center
           .col-md-8
             h2 
               | Gana hasta $
-              span#number 11,840
+              span#income 11,840
               |  mensuales.
             h6 Puedes lograr estos ingresos trabajando... 
             br
-            select(name="hours")
+            select(name="hours", onchange="calculate()")#hours
               option(value=3) 3 horas diarias
               option(value=4) 4 horas diarias
               option(value=5) 5 horas diarias
               option(value=6) 6 horas diarias
               option(value=7) 7 horas diarias
-              option(value=8) 8 horas diarias
+              option(value=8, selected) 8 horas diarias
             img(src="images/icons/multiplication.png", alt="", style="margin: 12px;")
-            select(name="days")
+            select(name="days", onchange="calculate()")#days
               option(value=1) 1 día a la semana
               option(value=2) 2 días a la semana
               option(value=3) 3 días a la semana
               option(value=4) 4 días a la semana
-              option(value=5) 5 días a la semana
+              option(value=5, selected) 5 días a la semana
               option(value=6) 6 días a la semana
               option(value=7) 7 días a la semana
           .col-md-4
@@ -93,3 +93,5 @@ html
         .col-md-4
 
     include includes/footer.pug    
+
+    script(src="javascripts/calculator.js")

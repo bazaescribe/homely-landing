@@ -1,6 +1,7 @@
 /*====================================== ATOMS =====================================*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Zilla+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 
 :root{
   --color-indigo:  #5F48F6;
@@ -26,45 +27,50 @@ html{
 }
 
 h1{
-  font-family: "Zilla Slab", "Roboto", sans-serif;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 98px;
+  margin-bottom: 8px;
 }
 
 h2{
-  font-family: "Zilla Slab", "Roboto", sans-serif;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 74px;
+  margin-bottom: 8px;
 }
 
 h3{
-  font-family: "Zilla Slab", "Roboto", sans-serif;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
+  margin-bottom: 8px;
 }
 
 h4{
-  font-family: "Zilla Slab", "Roboto", sans-serif;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
 }
 
 h5{
-  font-family: "Zilla Slab", "Roboto", sans-serif;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 8px;
 }
 
 h6{
-  font-family: "Roboto", "Roboto", sans-serif;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 
 p{
@@ -93,6 +99,33 @@ p{
   background: var(--color-gray) !important;
 }
 
+@media only screen and (max-width: 767px) {
+  h1{
+    font-size: 60px;  
+    line-height: 72px;
+  }
+  
+  h2{
+    font-size: 48px;
+  }
+  
+  h3{
+    font-size: 32px;
+  }
+  
+  h4{
+    font-size: 24px;
+  }
+  
+  h5{
+    font-size: 20px;
+  }
+  
+  h6{
+    font-size: 18px;
+  }
+}
+
 /*====================================== MOLECULES =====================================*/
 
 textarea, select, input, button { outline: none; }
@@ -105,6 +138,7 @@ textarea, select, input, button { outline: none; }
   font-weight: 500;
   padding: 0px 32px;
   outline: none;
+  margin: 0px 4px 4px 0px;
 }
 
 .btn:focus{
@@ -112,12 +146,12 @@ textarea, select, input, button { outline: none; }
 }
 
 .btn-main{
-  background: var(--color-gray);
+  background: var(--color-indigo);
   color: var(--color-white);
 }
 
 .btn-alt{
-  background: var(--color-indigo);
+  background: var(--color-gray);
   color: var(--color-white);
 }
 
@@ -128,6 +162,11 @@ textarea, select, input, button { outline: none; }
 
 .btn-alt-white{
   background: var(--color-white);
+  color: var(--color-gray);
+}
+
+.btn-alt-hv{
+  background: var(--color-mint);
   color: var(--color-gray);
 }
 
@@ -149,9 +188,13 @@ input[type="text"]:focus{
 select{
   height: 48px;
   background: var(--color-white);
+  background-image: url(../images/icons/chevron.png);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 95%;
   border: 1px solid var(--color-silver);
   border-radius: 0px !important;
-  padding: 0px 22px 0px 32px;
+  padding: 0px 60px 0px 32px;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
 }
@@ -174,167 +217,33 @@ li{
     margin-bottom: 16px !important;
   }
 
-  .col-md-6{
-    margin: 16px 0px;
+  .col-md-6, .col-md-4, .col-md{
+    padding: 40px 12px;
   }
 
-  .col-md-4{
-    margin: 16px 0px;
+  .section{
+    padding: 0px;
   }
 
   .btn{
     width: 100%;
     margin-bottom: 16px;
   }
+
+  select{
+    width: 100%;
+  }
 }
 
 /*====================================== ORGANISMS =====================================*/
-
-/*** NAVIGATION ***/
-
-.top{
-  position: fixed;
-  width: 100%;
-  z-index: 50;
-}
-
-.banner{
-  background: var(--color-indigo);
-  color: white;
-  height: 40px;
-  text-align: center;
-  font-size: 8px;
-  font-weight: 900;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s ease; /* Safari */
-    transition: all 0.4s ease;
-}
-
-.banner-hide{
-  height: 0px !important;
-  padding: 0px;
-}
-
-.navbar{
-  background: var(--color-white);
-  height: 64px;
-  display: flex;
-  align-items: center; 
-}
-
-.navbar .container{
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo{
-  width: 120px;
-}
-
-.navbar .burger{
-  display: none;
-}
-
-.navbar .shortcut{
-  display: none;
-}
-
-.navbar .menu{
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.navbar .menu-item{
-  color: var(--color-gray);
-  padding: 0px 8px;
-  text-decoration: none;
-}
-
-.navbar .menu-item-main{
-  color: var(--color-indigo);
-  padding: 0px 8px;
-  text-decoration: none;
-}
-
-.navbar .burger img{
-  width: 20px;
-}
-
-.navbar .shortcut img{
-  width: 30px;
-}
-
-.navbar-pro{
-  background: var(--color-gray);
-}
-
-.navbar-pro .menu-item{
-  color: var(--color-white) !important;
-}
-
-.navbar-pro .menu-item-main{
-  color: var(--color-dolly);
-  padding: 0px 8px;
-  text-decoration: none;
-}
-
-#menu-box{
-  background: var(--color-silver);
-  top: 0;
-  width: 95%;
-  height: 100%;
-  padding: 24px;
-  box-shadow: 2px 0px 24px var(--color-gray);
-}
-
-.menu-box .menu-item{
-  margin: 18px 0px;
-}
-
-.menu-box-navigation{
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-
-.menu-box a{
-  color: var(--color-gray);
-}
-
-@media only screen and (max-width: 767px) {
-  .navbar .menu-item{
-    display: none;
-  }
-
-  .navbar .burger{
-    display: flex !important;
-    align-items: center;
-  }
-}
-
-.screen{
-  z-index: 100 !important;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#menu-screen{
-  display: none;
-}
 
 /*** HERO ***/
 
 .hero{
   width: 100%;
-  height: 110vh;
+  height: 95vh;
   background: var(--color-indigo);
-  padding-top: 120px;
+  padding-top: 84px;
   padding-bottom: 20px;
   color: var(--color-white);
   background-size: cover;
@@ -397,7 +306,7 @@ li{
   margin: 12px 0px;
   display: none;
   position: relative;
-  top: -60px;
+  top: -32px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -425,8 +334,8 @@ li{
 #hero-landing{
   background:
     linear-gradient(
-      rgba(48, 50, 59, 0.4),
-      rgba(48, 50, 59, 0.4)
+      rgba(63, 68, 76, 0.12),
+      rgba(63, 68, 76, 0.12)
     ),
     url('../images/photos/home-hero.jpg');
   background-size: cover;
@@ -610,9 +519,9 @@ li{
   opacity: 1;
 }
 
-@media only screen and (max-width: 767px) {
-  .photo-grid{
-    display: none;
+@media only screen and (max-width: 1000px) {
+  #keepers-grid{
+    display: none !important;
   }
 }
 
@@ -641,4 +550,10 @@ li{
   width: 200px;
   align-self: center
 
+}
+
+@media only screen and (max-width: 767px) {
+  #services-photo{
+    margin-top: 40px;
+  }
 }
