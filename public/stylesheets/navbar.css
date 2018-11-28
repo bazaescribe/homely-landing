@@ -3,31 +3,36 @@
 #mobile{
   display: none;
   -webkit-transition: all 0.5s; /* Safari */
-    transition: all 0.5s;
+    transition: all 0.5s ease;
     background-image: linear-gradient(rgba(63, 68, 76,0.5), rgba(63, 68, 76,0.0));;
+}
+
+#menu-box{
+  position: relative;
+  top: -64px;
+  width: 100%;
+  height: 0vh;
+  overflow: hidden;
+  background: var(--color-indigo);
+  padding-top: 0px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+#menu-box a{
+  color: white;
+}
+
+.menu-open{
+  width: 100% !important;
+  height: 100vh !important;
+  border-bottom: 12px solid var(--color-mint);
 }
 
 .top{
   position: fixed;
   width: 100%;
-  z-index: 50;
-}
-
-.banner{
-  background: var(--color-indigo);
-  color: white;
-  height: 40px;
-  text-align: center;
-  font-size: 8px;
-  font-weight: 900;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s ease; /* Safari */
-    transition: all 0.4s ease;
-}
-
-.banner-hide{
-  height: 0px !important;
-  padding: 0px;
+  z-index: 40;
 }
 
 .navbar{
@@ -49,14 +54,6 @@
   width: 120px;
 }
 
-.navbar .burger{
-  display: none;
-}
-
-.navbar .shortcut{
-  display: none;
-}
-
 .menu-item{
   color: var(--color-gray);
   padding: 0px 8px;
@@ -73,15 +70,13 @@
 
 .menu-button{
   width: 24px;
+  transition: all 0.4s;
 }
 
 .menu-button img{
   width: 100%;
 }
 
-.menu-button path{
-  fill: red;
-}
 
 .navbar .burger img{
   width: 20px;
@@ -99,45 +94,7 @@
   color: var(--color-white) !important;
 }
 
-.navbar-pro .menu-item-main{
-  color: var(--color-dolly);
-  padding: 0px 8px;
-  text-decoration: none;
-}
-
-#menu-box{
-  background: var(--color-silver);
-  top: 0;
-  width: 95%;
-  height: 100%;
-  padding: 24px;
-  box-shadow: 2px 0px 24px var(--color-gray);
-}
-
-.menu-box .menu-item{
-  margin: 18px 0px;
-}
-
-.menu-box-navigation{
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-
-.menu-box a{
-  color: var(--color-gray);
-}
-
-.screen{
-  z-index: 100 !important;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#menu-screen{
+#logo-blue, #menu-blue{
   display: none;
 }
 
@@ -145,6 +102,11 @@
   background: white !important;
   box-shadow: 0px 2px 24px -8px rgba(0, 0, 0, 0.3);
 }
+
+.open-mobile a{
+  color: white;
+}
+
 
 @media only screen and (max-width: 767px) {
   #desktop{

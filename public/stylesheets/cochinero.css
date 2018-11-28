@@ -339,6 +339,7 @@ li{
     ),
     url('../images/photos/home-hero.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #hero-pro{

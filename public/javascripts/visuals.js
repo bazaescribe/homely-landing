@@ -1,26 +1,38 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 80) {
+    var logoYellow    = document.getElementById("logo-yellow");
+    var logoBlue      = document.getElementById("logo-blue");
+    var burgerYellow  = document.getElementById("menu-yellow");
+    var burgerBlue    = document.getElementById("menu-blue");
+
+    if (scroll >= 80) { //bajando
       $("#mobile").addClass("scrolled-mobile");
-      document.getElementById("logo-mobile").src="images/logos/homely.svg";
-      document.getElementById("menu-button").src="images/icons/plusAlt.svg";
-      console.log("I'm helping");
-    }else {
+      logoYellow.style.display = "none";
+      burgerYellow.style.display = "none";
+      logoBlue.style.display = "inline-block";
+      burgerBlue.style.display = "inline-block";
+    }else { //subiendo
       $("#mobile").removeClass("scrolled-mobile");
-      document.getElementById("logo-mobile").src="images/logos/homely-cream.svg";
-      document.getElementById("menu-button").src="images/icons/plus.svg";
+      logoYellow.style.display = "inline-block";
+      burgerYellow.style.display = "inline-block";
+      logoBlue.style.display = "none";
+      burgerBlue.style.display = "none";
     }
 });
 
-function message(){
-    alert("k onda k pez");
-}
 
 function openMenu(){
-  document.getElementById("mobile").style.background = "var(--color-indigo)";
-  console.log("quack")
+  var open  = document.getElementById('menu-button');
+  var close = document.getElementById('menu-button-close');
+  close.style.transform = "rotate(225deg)";
+  open.style.transform = "rotate(180deg)";
+  $("#menu-box").addClass("menu-open");
 }
 
 function closeMenu(){
-  document.getElementById("menu-screen").style.display = "none";
+  var open  = document.getElementById('menu-button');
+  var close = document.getElementById('menu-button-close');
+  close.style.transform = "rotate(-45deg)";
+  open.style.transform = "rotate(-90deg)";
+  $("#menu-box").removeClass("menu-open");
 }
