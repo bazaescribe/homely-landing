@@ -22,7 +22,7 @@
 }
 
 html{
-  color: var(--color-black);
+  color: var(--color-gray);
   font-family: "Roboto", sans-serif;
 }
 
@@ -30,7 +30,7 @@ h1{
   font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 80px;
-  line-height: 98px;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 
@@ -38,22 +38,22 @@ h2{
   font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 60px;
-  line-height: 74px;
-  margin-bottom: 8px;
+  line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 h3{
   font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  line-height: 59px;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 
 h4{
   font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  line-height: 1.2;
   line-height: 39px;
 }
 
@@ -61,7 +61,7 @@ h5{
   font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 
@@ -69,7 +69,7 @@ h6{
   font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 
@@ -97,6 +97,10 @@ p{
 
 .bg-dark{
   background: var(--color-gray) !important;
+}
+
+.bg-blue{
+  background: var(--color-indigo) !important
 }
 
 @media only screen and (max-width: 767px) {
@@ -200,7 +204,8 @@ select{
 }
 
 .section{
-  padding: 44px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 ul {
@@ -217,12 +222,13 @@ li{
     margin-bottom: 16px !important;
   }
 
+  /* .section{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }  */
+
   .col-md-6, .col-md-4, .col-md{
     padding: 40px 12px;
-  }
-
-  .section{
-    padding: 0px;
   }
 
   .btn{
@@ -241,7 +247,7 @@ li{
 
 .hero{
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   background: var(--color-indigo);
   padding-top: 84px;
   padding-bottom: 20px;
@@ -354,16 +360,20 @@ li{
 
 /*** HERO SECONDARY ***/
 
-.section-hero{
-  height: 110vh;
+.hero-micro{
+  background: var(--color-indigo); 
+  height: 100vh;
+  width: 100%;
+  padding-bottom: 40px;
+  background-size: cover;
+  background-position: center;
 }
 
-.section-hero .row{
- height: 100%;
-}
-
-.section-hero .info{
-  padding: 44px;
+.hero-card{
+  background: white; 
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px -8px rgba(48, 50, 59, 0.6);
 }
 
 .image{
@@ -375,75 +385,48 @@ li{
   background: var(--color-cream);
 }
 
-/*** FOOTER ***/
-
-.footer{
-  border-top: 1px solid var(--color-silver);
-  font-size: 14px;
-  padding-top: 44px;
-  color: var(--color-gray);
-  line-height: 1.8;
-}
-
-.footer a{
-  color: var(--color-gray);
-}
-
-.stores{
-  display: flex;
-}
-
-.store{
-  width: 48px;
-  height: 48px;
-  border-radius: 48px;
-  background: var(--color-black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 12px;
-  -webkit-transition: all 0.5s; /* Safari */
-    transition: all 0.5s;
-}
-
-.store:hover{
-  width: 72px;
-}
-
-.store img{
-  width: 32px;
-}
-
-.social-contact{
-  display: flex;
-  justify-content: flex-end;
-  padding: 0px 12px !important;
-}
-
-.social-contact img{
-  width: 28px;
-  margin-left: 12px;
-}
-
-.soul{
-  text-align: right;
-}
-
 @media only screen and (max-width: 767px) {
-  .footer a{
-    margin: 16px 0px !important;
+  .hero-micro{
+    padding-bottom: 0px; 
   }
 
-  .stores{
-    display: none;
-  }
-
-  .soul{
-    display: none;
+  .hero-card{
+    position: relative;
+    bottom: -40px;
   }
 }
 
 /*====================================== TEMPLATES =====================================*/
+
+/*** PERKS LIST ***/
+
+.perk{
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .perk{
+    display: flex;
+    padding: 0px;
+  }
+
+  .perk .image{
+    text-align: center;
+    width: 120px;
+  }
+
+  .perk .content{
+    width: 90%;
+  }
+
+  .perk .image img{
+    width: 80% !important;
+  }
+
+}
 
 /*** PRESS LOGOS ***/
 
@@ -557,4 +540,9 @@ li{
   #services-photo{
     margin-top: 40px;
   }
+}
+
+#income{
+  color: var(--color-indigo);
+  font-size: 80px;
 }

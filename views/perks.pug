@@ -12,96 +12,88 @@ html
   body
     include includes/navbar
 
-    .container-fluid.bg-light.section-hero
-      .row
-        .col-md-6.d-flex.align-items-center.info
-          div
-            h2 Mucho más que sólo limpiar tu casa.
-            p  Regístrate en linea solicita una entrevista al 7098-2559 y comienza tu proceso de admisión.
-            button.btn.btn-main Regístrate ahora
-        .col-md-6.image(style="background-image: url('images/photos/perks-hero.jpg')")
+    .hero-micro.d-flex.align-items-end(style="background-image: url('images/photos/perks-hero.jpg')")
+      .container
+        .row
+          .col-lg-5.hero-card(style="")
+            h3  Mucho más que limpiar tu casa.
+            p   Servicios asegurados, pagos encriptados y personal confiable son apenas algunos de los beneficios de limpiar tu hogar con nosotros.
+            button.btn.btn-main Quiero un servicio
 
     .container.section
       .row
         .col-md-6.infocard
           .image(style="background-image: url('images/photos/perks-broken.jpg')")
           div
-            h4 Servicios asegurados.
+            h3 Servicios asegurados.
             p
-              | Para tu tranquilidad, todos los servicios contratados dentro de la plataforma cuentan con un seguro de hasta 1MDP.
+              | Para tu tranquilidad, todos los servicios contratados dentro de la plataforma cuentan con un seguro de hasta 1 MILLÓN DE PESOS.
         .col-md-6.infocard
           .image(style="background-image: url('images/photos/perks-mom.jpg')")
           div
-            h4 Empodera personas.
+            h3 Empodera personas.
             p
               | Más del 90% de los keepers han reportado cambios significativos en su entorno económico, familiar y personal.
 
-    .container.section
-      .row
-        .col-md-4
-          img(src="images/icons/healt.png", style="width: 30%;", alt="")
-          br
-          h4 Pagos seguros.
-          p  Tus pagos son procesados con los estándares más altos de seguridad.
-        .col-md-4
-          img(src="images/icons/time.png", style="width: 30%;", alt="")
-          br
-          h4 Atención personalizada.
-          p  Nuestro equipo está disponible a ayudarte en lo que necesites.
-        .col-md-4
-          img(src="images/icons/money.png", style="width: 30%;", alt="")
-          br
-          h4 Keepers confiables.
-          p  Sólo el 20% de los solicitantes logran aprobar nuestros filtros de selección.
-
-    .section.bg-cream
-      .container
-        .row.d-flex.align-items-center
-          .col-md-8
-            h2 
-              | Gana hasta $
-              span#number 11,840
-              |  mensuales.
-            h6 Puedes lograr estos ingresos trabajando... 
-            br
-            select(name="hours")
-              option(value=3) 3 horas diarias
-              option(value=4) 4 horas diarias
-              option(value=5) 5 horas diarias
-              option(value=6) 6 horas diarias
-              option(value=7) 7 horas diarias
-              option(value=8) 8 horas diarias
-            img(src="images/icons/multiplication.png", alt="", style="margin: 12px;")
-            select(name="days")
-              option(value=1) 1 día a la semana
-              option(value=2) 2 días a la semana
-              option(value=3) 3 días a la semana
-              option(value=4) 4 días a la semana
-              option(value=5) 5 días a la semana
-              option(value=6) 6 días a la semana
-              option(value=7) 7 días a la semana
+    .bg-blue
+      .container.section
+        .row
           .col-md-4
-            img(src="images/photos/keeper-hi.png", alt="Keeper saludando", style="width: 100%")
-    
-    .container.section
-      .row
-        .col-md-6
-          h3  ¡Reune tus documentos!
-          br
-          ul
-            li Acta de nacimiento.
-            li Identificación oficial.
-            li Comprobante de domicilio.
-            li Carta de no antecedentes penales.
-            li Dos cartas de recomendación.
-            li Cuenta bancaria (Para recibir tus pagos).
-        .col-md-6 
-          h3 Realiza tu examen de confianza.
-          br
-          p  El examen de confianza que desarrollamos en JelpMi! nos ayuda a garantizar seguridad para ti y tus clientes en cada uno de los servicios que prestes en la plataforma.
-          img(src="images/badges/sketch-1.png", alt="")
+            .perk
+              .image
+                img(src="images/icons/healt.png", style="width: 30%;", alt="")
+              .content
+                h4 Keepers asegurados.
+                p  Todos los keepers cuentan con un seguro de gastos médicos.
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/time.png", style="width: 30%;", alt="")
+              .content
+                h4 Pago justo por hora.
+                p  Paga por el tiempo que dure tu servicio hasta que este haya concluido.
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/contract.png", style="width: 30%;", alt="")
+              .content
+                h4 Sin contratos.
+                p  Sólo los servicios que necesites, nosotros nos encargamos del resto.
+        .row  
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/help.png", style="width: 30%;", alt="")
+              .content
+                h4 Ayuda personalizada.
+                p  Estamos contigo los 7 días de la semana para apoyarte en lo que necesites.
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/bill.png", style="width: 30%;", alt="")
+              .content
+                h4 Facturas.
+                p  Los keepers pueden generar comprobantes fiscales para todos los servicios.
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/safety.png", style="width: 30%;", alt="")
+              .content
+                h4 Keepers confiables.
+                p  Sólo 20% de los aplicantes aprueban nuestro estricto proceso de admisión.
 
-    .container
+    div(style="background-image: url('images/photos/perks-waranty.jpg');").d-flex.align-items-center.justify-content-center.hero-micro
+      .container.section
+        .row
+          .col-lg-5.hero-card
+            h3 Garantía de satisfacción Homely.
+            p  Si la calidad del servicio prestado por tu keeper no es de tu agrado, podrás solicitar un servicio de garantía totalmente gratis (1 día de anticipación mínimo).
+            p.small 
+              |  * Enviaremos un keeper diferente al de tu última visita.
+              br
+              |  ** El servicio de garantía sólo podrá ser asignado de Lunes a Viernes en cualquier horario.
+           
+    .container.section
       .row.poster.bg-light
         .col-md-8
         .col-md-4

@@ -4,7 +4,19 @@
   display: none;
   -webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5s ease;
-    background-image: linear-gradient(rgba(63, 68, 76,0.5), rgba(63, 68, 76,0.0));;
+    background-image: linear-gradient(rgba(63, 68, 76,0.6), rgba(63, 68, 76,0.0));;
+}
+
+.pro-bar{
+  background: var(--color-gray);
+}
+
+.pro-bar .menu-item{
+  color: var(--color-white);
+}
+
+.pro-bar .menu-item-main{
+  color: var(--color-dolly);
 }
 
 #menu-box{
@@ -43,6 +55,10 @@
   display: flex;
   align-items: center;
   color: var(--color-gray);
+}
+
+.navbar a{
+  padding: 8px;
 }
 
 .navbar a:hover{

@@ -1,22 +1,44 @@
 link(rel='stylesheet', href='stylesheets/navbar.css')
 
 .top
-  .banner#info-banner
-    img(src="../images/badges/jelpmi.png", alt="")
-  .navbar.navbar-pro
-    .container
-      .burger(style='')
-        img(src='images/icons/menu_open.png', alt='Homely')
-      .logo(style='')
-        a(href='/')
-          img.logo(src='images/logos/homely-pro.png', alt='Homely')
-      .menu(style='')
-        a.menu-item(href='#') Ver cobertura
-        a.menu-item(href='#') Iniciar sesión
-        a.menu-item(href='#') Quiero trabajar
+  #desktop(style="height: 64px;").pro-bar
+    .container.d-flex.align-items-center.justify-content-between.navbar
+      .left
+        a(href="/")
+          img.logo(src='images/logos/homely-cream.svg', alt='Homely')#logo
+      .right
+        a.menu-item(href='/ciudades') Ver cobertura
+        a.menu-item(href='/') Homely para casa
+        a.menu-item(href='/ser-keeper') Quiero trabajar
         a.menu-item-main(href='#') Quiero un servicio
-      .shortcut(style='')
-        img.logo(src='images/icons/clean.png', alt='Homely')
+  #mobile(style="height: 64px;")
+    .container.d-flex.align-items-center.justify-content-between.navbar
+      .left.menu-button(onclick="openMenu()")#menu-button
+        img.logo(src='images/icons/plus.svg', alt='Homely')#menu-yellow
+        img.logo(src='images/icons/plusAlt.svg', alt='Homely')#menu-blue
+      a(href="/")
+        .right
+          img.logo(src='images/logos/homely-cream.svg', alt='Homely')#logo-yellow
+          img.logo(src='images/logos/homely.svg', alt='Homely')#logo-blue
+  #menu-box
+    .container.d-flex.align-items-center.justify-content-between(style="height:64px;")
+      .left.menu-button(onclick="closeMenu()")#menu-button-close
+        img.logo(src='images/icons/plus.svg', alt='Homely')
+      a(href="/")
+        .right
+          img.logo(src='images/logos/homely-cream.svg', alt='Homely')
+    .container(style="padding-top: 40px;")
+      a(href="https://servicios.jelpmi.mx")
+        h3 Quiero un servicio  
+      a(href="/ser-keeper")
+        h3 Quiero trabajar  
+      a(href="/office")
+        h3 Servicios para oficina  
+      a(href="/perks")
+        h3 Beneficios
+      a(href="/cities")
+        h3 Cobertura    
 
 script
     include ../../public/javascripts/visuals.js
+

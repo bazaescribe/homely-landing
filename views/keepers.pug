@@ -12,34 +12,43 @@ html
   body
     include includes/navbar
 
-    .container-fluid.bg-light.section-hero
-      .row
-        .col-md-6.d-flex.align-items-center.info
-          div
-            h2 Comienza a ganar dinero esta semana.
-            p  Regístrate en linea solicita una entrevista al 7098-2559 y comienza tu proceso de admisión.
-            button.btn.btn-main Regístrate ahora
-        .col-md-6.image(style="background-image: url('images/photos/keepers-hero.jpg')")
+    .hero-micro.d-flex.align-items-end(style="background-image: url('images/photos/keepers-hero.jpg')")
+      .container
+        .row
+          .col-lg-5.hero-card(style="")
+            h3  ¡Comienza a ganar dinero esta semana!
+            p   Limpia hogares y oficinas de forma digna y segura, gana hasta cinco veces más que en una agencia. 
+            p   Tú eliges tus zonas, días y horarios de trabajo.
+            button.btn.btn-alt-hv Regístrate
+            span(style="padding: 16px; font-size: 18px;")
+              b ó llámanos 📞  
+                a(href="tel:70982559") 7098-2559
 
-
-    .container.section
-      .row
-        .col-md-4
-          img(src="images/icons/healt.png", style="width: 30%;", alt="")
-          br
-          h4 Seguro de gastos médicos.
-          p  Todos los keepers cuentan con un seguro de gastos médicos para cubrirte en todo momento durante tus servicios.
-        .col-md-4
-          img(src="images/icons/time.png", style="width: 30%;", alt="")
-          br
-          h4 Cobra el tiempo que trabajes.
-          p  Todos los servicios se pagan por hora, nunca tendrás que preocuparte por jefes abusivos.
-        .col-md-4
-          img(src="images/icons/money.png", style="width: 30%;", alt="")
-          br
-          h4 Depósitos puntuales cada semana.
-          p  Trabaja con la certeza de que siempre recibiras tu dinero de manera segura en tu cuenta bancaria.
-
+    .bg-blue
+      .container.section
+        .row
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/healt.png", style="width: 30%;", alt="")
+              .content
+                h4 Seguro de gastos médicos.
+                p  Todos los keepers cuentan con un seguro de gastos médicos para cubrirte en todo momento durante tus servicios.
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/time.png", style="width: 30%;", alt="")
+              .content
+                h4 Pago justo por hora.
+                p  Todos los servicios se pagan por hora, nunca tendrás que preocuparte por jefes abusivos.
+          .col-md-4
+            .perk
+              .image
+                img(src="images/icons/money.png", style="width: 30%;", alt="")
+              .content
+                h4 Tu dinero cada semana.
+                p  Trabaja con la certeza de que siempre recibiras tu dinero de manera segura en tu cuenta bancaria.
+          
     .section.bg-cream(style="background-image: url('images/bgs/pattern-1.png'); background-size: cover;")
       .container
         .row.d-flex.align-items-center
@@ -68,7 +77,7 @@ html
               option(value=7) 7 días a la semana
           .col-md-4
             img(src="images/photos/keeper-hi.png", alt="Keeper saludando", style="width: 100%")
-    
+  
     .container.section
       .row
         .col-md-6
@@ -78,20 +87,13 @@ html
             li Acta de nacimiento.
             li Identificación oficial.
             li Comprobante de domicilio.
-            li Carta de no antecedentes penales.
             li Dos cartas de recomendación.
             li Cuenta bancaria (Para recibir tus pagos).
         .col-md-6 
           h3 Realiza tu examen de confianza.
           br
           p  El examen de confianza que desarrollamos en JelpMi! nos ayuda a garantizar seguridad para ti y tus clientes en cada uno de los servicios que prestes en la plataforma.
-          img(src="images/badges/sketch-1.png", alt="")
+          button.btn.btn-main Regístrate ahora
+          button.btn.btn-alt Llámanos
 
-    .container
-      .row.poster.bg-light
-        .col-md-8
-        .col-md-4
-
-    include includes/footer.pug    
-
-    script(src="javascripts/calculator.js")
+    include includes/footer.pug
