@@ -27,12 +27,16 @@ app.get('/test', (req, res) => {
   res.render('test')
   });
 
-app.get('/ser-keeper', (req, res) => {
+app.get('/keepers', (req, res) => {
   res.render('keepers')
   });
 
 app.get('/perks', (req, res) => {
   res.render('perks')
+  });
+
+app.get('/cities', (req, res) => {
+  res.render('cities')
   });
 
 app.use(logger('dev'));
