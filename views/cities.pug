@@ -14,9 +14,8 @@ html
   body(onload="renderizeCities()")
     include includes/navbar
 
-    div(style="background: #5F48F6; padding-top: 84px;").container
-      div(style="background-image: url('images/photos/cities-hero.jpg'); text-align: center; color: white; height: 64vh;").d-flex.align-items-center.justify-content-center
-        h2 Ciudades
+    .hero-section.d-flex.align-items-center(style="background-image: url('images/photos/cities-hero.jpg')")
+      h1 Ciudades
 
     .container.section
       .row.d-flex.justify-content-center
@@ -31,6 +30,7 @@ html
     .container.section
       h3 ¿Aún no estamos en tu ciudad?
       p  Preregístrate con nosotros y obtén tu primer servicio completamente gratis cuando lleguemos a donde tú estés.
-      button.btn.btn-main Quiero mi servicio gratis prros
+      a(href="https://goo.gl/forms/Te0SGXrHS3RDuitg1")
+        button.btn.btn-main Quiero mi servicio gratis prros
 
     include includes/footer.pug

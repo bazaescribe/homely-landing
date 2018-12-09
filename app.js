@@ -20,24 +20,28 @@ app.get('/', (req, res) => {
 });
 
 app.get('/office', (req, res) => {
-res.render('office')
+  res.render('office')
 });
 
 app.get('/test', (req, res) => {
   res.render('test')
-  });
+});
 
 app.get('/keepers', (req, res) => {
   res.render('keepers')
-  });
+});
 
 app.get('/perks', (req, res) => {
   res.render('perks')
-  });
+});
 
 app.get('/cities', (req, res) => {
   res.render('cities')
-  });
+});
+
+app.get('/terms', (req, res) => {
+  res.render('terms')
+});
 
 app.use(logger('dev'));
 app.use(express.json());

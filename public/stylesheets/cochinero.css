@@ -396,6 +396,78 @@ li{
   }
 }
 
+/*** HERO SECTION ***/
+
+.hero-section{
+  height: 70vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-section{
+    background-position: center;
+  }
+
+  .dephased:before {
+    border: 0px solid var(--color-indigo);
+  }
+  
+}
+
+/*** HERO SECTION ***/
+
+.sections-column{
+  background: var(--color-silver);
+  margin-top: 84px;
+  padding: 0px;
+}
+
+.section-button{
+  font-family: "Roboto slab", sans-serif;
+  font-size: 20px;
+  padding:20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+}
+
+.section-button .image{
+  width: 20%;
+}
+
+.section-button .image img{
+  width: 100%;
+}
+
+.section-button .text{
+  padding-left: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section-button:hover{
+  background: rgba(95, 72, 246, 0.06);
+}
+
+.content-column{
+  margin-top: 84px;
+  padding: 0px 32px;
+}
+
+#privacy{
+  display: none;
+}
+
+#rules{
+  display: none;
+}
+
 /*====================================== TEMPLATES =====================================*/
 
 /*** PERKS LIST ***/
