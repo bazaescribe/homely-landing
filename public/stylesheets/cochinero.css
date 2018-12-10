@@ -346,8 +346,8 @@ li{
 #hero-landing{
   background:
     linear-gradient(
-      rgba(63, 68, 76, 0.12),
-      rgba(63, 68, 76, 0.12)
+      rgba(63, 68, 76, 0.2),
+      rgba(63, 68, 76, 0.2)
     ),
     url('../images/photos/home-hero.jpg');
   background-size: cover;
@@ -562,7 +562,7 @@ li{
 }
 
 .photo-cell img{
-  width: 80%;
+  width: 100%;
 }
 
 .photo-cell div{
@@ -572,11 +572,11 @@ li{
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.6s;
 }
 
 .photo-cell:hover div{
-  background-color: var(--color-mint) !important;
+  background-color: var(--color-indigo) !important;
   opacity: 1;
 }
 
