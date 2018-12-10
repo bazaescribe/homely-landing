@@ -8,9 +8,11 @@ html(lang='en', dir='ltr')
     link(rel='stylesheet', href='stylesheets/cochinero.css')
     link(rel='shortcut icon', href='images/icons/favicon.png')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
-
-  body
     script(src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDQSkVVrZ1BMsG10-44vN0aXJQerFQZkAw', type='text/javascript')
+    script(src='javascripts/landing-modal.js')
+
+  body(onload="getURL()")
+    
 
     include includes/navbar.pug    
     
@@ -22,7 +24,7 @@ html(lang='en', dir='ltr')
               h1 ¡Pásale a lo barrido!
               h5 Encuentra expertos en limpieza cerca de ti
             .searchbox
-              form(style="height: 100%;", action="http://servicios.jelpmi.mx")
+              form(style="height: 100%;", action="https://servicios.homely.mx")
                 input(type='text', name="neighborhood", placeholder='Escribe tu colonia', onkeyup='initialize()')#searchTextField
                 button(type='button', name='button')
                   | Buscar
@@ -63,8 +65,10 @@ html(lang='en', dir='ltr')
               li Tus servicios están asegurados ante daños accidentales causados por tu keeper.
               li Hecho con amor en México.
             br
-            button.btn.btn-main Quiero trabajar
-            button.btn.btn-ghost Beneficios para los clientes
+            a(href="keepers")
+              button.btn.btn-main Quiero trabajar
+            a(href="perks")
+              button.btn.btn-ghost Beneficios para los clientes
           .col-md.d-flex.justify-content-end.align-items-center#keepers-grid
             .photo-grid
               .photo-row
@@ -112,7 +116,8 @@ html(lang='en', dir='ltr')
             |  ó si lo requieres solicita un 
             b servicio exprés con sólo dos horas de anticipación**
             | .
-          button(onclick="message()").btn.btn-main Solicita un servicio
+          a(href="https://servicios.homely.mx")  
+            button(onclick="message()").btn.btn-main Solicita un servicio
           br
           br
           p.small
@@ -123,7 +128,7 @@ html(lang='en', dir='ltr')
       .row.section
         .col-md-6
           h2 Solicita un servicio
-          a(href="https://servicios.jelpmi.mx")
+          a(href="https://servicios.homely.mx")
             button.btn.btn-main Servicio para tu depa
           a(href="/office")
             button.btn.btn-alt Servicio para oficina
@@ -133,6 +138,17 @@ html(lang='en', dir='ltr')
             button.btn.btn-alt-hv Comienza tu registro
 
     include includes/footer.pug
+
+    .screen#popup
+      .custom-modal
+        .col-md-10
+          h3  JelpMi! ahora es Homely.
+          h6  Queremos llevar la experiencia de un hogar limpio al infinito y más alla. Nos pusimos guapos para ti.
+          br
+          button.btn.btn-alt-hv(onclick="closeModal()") Entendido
+          a(href="https://medium.com/jelpmi/jelp-mi-ahora-es-homely-1eec4e8ba201", target="_blank")
+            button.btn.btn-ghost-alt Leer más
+
 
   script(type='text/javascript').
       function initialize() {

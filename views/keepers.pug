@@ -15,11 +15,12 @@ html
     .hero-micro.d-flex.align-items-end(style="background-image: url('images/photos/keepers-hero.jpg')")
       .container
         .row
-          .col-lg-5.hero-card(style="")
+          .col-lg-5.hero-card
             h3  ¡Comienza a ganar dinero esta semana!
             p   Limpia hogares y oficinas de forma digna y segura, gana hasta cinco veces más que en una agencia. 
             p   Tú eliges tus zonas, días y horarios de trabajo.
-            button.btn.btn-alt-hv Regístrate
+            a(href="https://goo.gl/forms/8LaKi9t7Lj3BAMGI3")
+              button.btn.btn-alt-hv Regístrate
             span(style="padding: 16px; font-size: 18px;")
               b ó llámanos 📞  
                 a(href="tel:70982559") 7098-2559
@@ -56,7 +57,7 @@ html
             h2 
               | Gana hasta $
               span#income 11,840
-              |  mensuales.
+              |  mensuales
             h6 Puedes lograr estos ingresos trabajando... 
             br
             select(name="hours", onchange="calculate()")#hours
@@ -92,8 +93,12 @@ html
         .col-md-6 
           h3 Realiza tu examen de confianza.
           br
-          p  El examen de confianza que desarrollamos en JelpMi! nos ayuda a garantizar seguridad para ti y tus clientes en cada uno de los servicios que prestes en la plataforma.
-          button.btn.btn-main Regístrate ahora
-          button.btn.btn-alt Llámanos
+          p  El examen de confianza que desarrollamos en Homely nos ayuda a garantizar seguridad para ti y tus clientes en cada uno de los servicios que prestes en la plataforma.
+          a(href="https://goo.gl/forms/8LaKi9t7Lj3BAMGI3")
+            button.btn.btn-main Regístrate ahora
+          a(href="tel:70982559")
+            button.btn.btn-alt Llámanos
 
     include includes/footer.pug
+
+    script(src='javascripts/calculator.js')
