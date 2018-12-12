@@ -45,6 +45,7 @@
   position: fixed;
   width: 100%;
   z-index: 40;
+  box-shadow: 0px 2px 42px -8px rgba(0,0,0,0.16);
 }
 
 .navbar{
@@ -131,6 +132,10 @@
 
   #mobile{
     display: inherit;
+  }
+
+  .top{
+    box-shadow: 0px 0px 0px -8px rgba(0,0,0,0);
   }
 
 }

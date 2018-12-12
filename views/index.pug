@@ -139,15 +139,7 @@ html(lang='en', dir='ltr')
 
     include includes/footer.pug
 
-    .screen#popup
-      .custom-modal
-        .col-md-10
-          h3  JelpMi! ahora es Homely.
-          h6  Queremos llevar la experiencia de un hogar limpio al infinito y más alla. Nos pusimos guapos para ti.
-          br
-          button.btn.btn-alt-hv(onclick="closeModal()") Entendido
-          a(href="https://medium.com/jelpmi/jelp-mi-ahora-es-homely-1eec4e8ba201", target="_blank")
-            button.btn.btn-ghost-alt Leer más
+    include includes/modal.pug
 
 
   script(type='text/javascript').
