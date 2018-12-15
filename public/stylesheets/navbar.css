@@ -15,6 +15,10 @@
   color: var(--color-white);
 }
 
+.pro-bar .menu-item:hover{
+  color: var(--color-white);
+}
+
 .pro-bar .menu-item-main{
   color: var(--color-dolly);
 }
@@ -56,6 +60,8 @@
   display: flex;
   align-items: center;
   color: var(--color-gray);
+  position: relative;
+  z-index: 41;
 }
 
 .navbar a{
@@ -64,7 +70,6 @@
 
 .navbar a:hover{
   text-decoration: none;
-  color: var(--color-mint);
 }
 
 .logo{
@@ -77,12 +82,33 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
+  display: inline-block;
+  position: relative;
 }
 
-.menu-item-main{
+.menu-item::before{
+  content: '';
+  width: 0%;
+  height: 12px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 16px;
+  left: 12px;
+  transition: 0.6s all ease;
+}
+
+.menu-item:hover::before{
+  width: 88%;
+  background: rgba(43, 239, 178, 0.48);
+}
+
+.item-main{
   color: var(--color-indigo);
-  padding: 0px 8px;
-  text-decoration: none;
+}
+
+.pro-bar .item-main{
+  color: var(--color-dolly);
 }
 
 .menu-button{

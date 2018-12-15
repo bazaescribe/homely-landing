@@ -8,8 +8,16 @@
   line-height: 1.8;
 }
 
-.footer a{
+.section-link{
   color: var(--color-gray);
+  text-decoration: underline;
+  text-decoration-color: white;
+  transition: 0.6s all ease;
+}
+
+.section-link:hover{
+  text-decoration-color: var(--color-gray);
+  color: inherit;
 }
 
 .stores{
