@@ -42,6 +42,8 @@ zones = [
   { "city":"PB","name":"Cholula","status":"SOON"},
   { "city":"PB","name":"Puebla","status":"SOON"},
   { "city":"QE","name":"Querétaro","status":"SOON"},
+  { "city":"QR","name":"Cancún","status":"SOON"},
+  { "city":"QR","name":"Playa del Carmen","status":"SOON"},
   { "city":"SN","name":"Hermosillo","status":"SOON"},
   { "city":"VR","name":"Veracruz","status":"SOON"},
   { "city":"YC","name":"Mérida","status":"SOON"}

@@ -146,6 +146,10 @@ textarea, select, input, button { outline: none; }
   margin: 0px 4px 4px 0px;
 }
 
+.btn:hover{
+  filter: saturate(1.1);
+}
+
 .btn:focus{
   filter: saturate(0.5);
 }
