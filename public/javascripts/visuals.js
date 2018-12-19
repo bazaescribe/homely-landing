@@ -27,6 +27,7 @@ function openMenu(){
   close.style.transform = "rotate(225deg)";
   open.style.transform = "rotate(180deg)";
   $("#menu-box").addClass("menu-open");
+  console.log("no she")
 }
 
 function closeMenu(){

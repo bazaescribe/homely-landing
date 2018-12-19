@@ -33,6 +33,7 @@
   padding-top: 0px;
   text-align: center;
   transition: 0.4s;
+  z-index: 160;
 }
 
 #menu-box a{
