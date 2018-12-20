@@ -38,7 +38,7 @@ zones = [
   { "city":"NL","name":"Guadalupe","status":"SOON"},
   { "city":"NL","name":"Monterrey","status":"SOON"},
   { "city":"NL","name":"San Pedro Garza García","status":"SOON"},
-  { "city":"NL","name":"San Nicolas de los Garza","status":"SOON"},
+  { "city":"NL","name":"San Nicolás de los Garza","status":"SOON"},
   { "city":"PB","name":"Cholula","status":"SOON"},
   { "city":"PB","name":"Puebla","status":"SOON"},
   { "city":"QE","name":"Querétaro","status":"SOON"},

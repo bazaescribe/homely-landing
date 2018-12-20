@@ -16,9 +16,10 @@ html
       .container
         .row
           .col-lg-5.hero-card
-            h3  ¡Comienza a ganar dinero esta semana!
-            p   Limpia hogares y oficinas de forma digna y segura, gana hasta cinco veces más que en una agencia. 
-            p   Tú eliges tus zonas, días y horarios de trabajo.
+            #card-message
+              h3#message-title  ¡Comienza a ganar dinero esta semana!
+              p   Limpia hogares y oficinas de forma digna y segura, gana hasta cinco veces más que en una agencia. 
+              p   Tú eliges tus zonas, días y horarios de trabajo.
             a(href="https://goo.gl/forms/8LaKi9t7Lj3BAMGI3")
               button.btn.btn-alt-hv Regístrate
             span(style="padding: 16px; font-size: 18px;")
@@ -102,3 +103,6 @@ html
     include includes/footer.pug
 
     script(src='javascripts/calculator.js')
+
+    script(src='javascripts/targeted-keepers.js')
+      
