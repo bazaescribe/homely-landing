@@ -270,6 +270,14 @@ li{
   display: block;
 }
 
+.pac-item{
+  padding: 16px;
+}
+
+.pac-matched{
+  
+}
+
 /*====================================== TEMPLATES =====================================*/
 
 /*** HERO ***/
@@ -363,18 +371,23 @@ li{
 }
 
 .badge img{
-  width: 200px;
+  width: 140px;
 }
 
 #hero-landing{
   background:
     linear-gradient(
-      rgba(63, 68, 76, 0.2),
-      rgba(63, 68, 76, 0.2)
+      rgba(0, 0, 0, 0.08) 70%,
+      rgba(0, 0, 0, 0.32),
+      rgba(0, 0, 0, 0.8)
     ),
-    url('../images/photos/home-hero-vi.jpg');
+    url('../images/photos/home-hero-ii.jpg');
   background-size: cover;
   background-position: center;
+}
+
+#hero-text{
+  text-shadow: 0px 4px 32px rgba(63, 68, 76, 0.32);
 }
 
 #hero-pro{

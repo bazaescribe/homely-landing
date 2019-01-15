@@ -2,6 +2,9 @@ doctype html
 html(lang='en', dir='ltr')
   head
     meta(charset='utf-8')
+    meta(name='description', content='Encuentra expertos en limpieza para tu casa u oficina cerca de ti.')
+    meta(name='keywords', content='Servicio, limpieza, doméstica, oficinas, casa, ciudad de mexico, mexico, guadalajara, horas, tarjeta de credito, uber, ayuda, chacha, muchacha, sirvienta')
+    meta(name='author', content='Grupo MICRAVI SA de CV')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Homely - Pásale a lo barrido
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
@@ -10,6 +13,23 @@ html(lang='en', dir='ltr')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
     script(src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDQSkVVrZ1BMsG10-44vN0aXJQerFQZkAw', type='text/javascript')
     script(src='javascripts/landing-modal.js')
+
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-76627910-4')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-76627910-4');
+
+    // Start Alexa Certify Javascript
+    script(type='text/javascript').
+      _atrk_opts = { atrk_acct:"Jhx0p1IWhd10Y8", domain:"homely.mx",dynamic: true};
+      (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    noscript
+      img(src='https://certify.alexametrics.com/atrk.gif?account=Jhx0p1IWhd10Y8', style='display:none', height='1', width='1', alt='')
+    // End Alexa Certify Javascript
+
 
   body(onload="getURL()")
     
@@ -20,16 +40,16 @@ html(lang='en', dir='ltr')
       .container
         #content
           div
-            div
-              h1 ¡Pásale a lo barrido!
-              h5 Encuentra expertos en limpieza cerca de ti
+            #hero-text
+              h1#hero-title ¡Pásale a lo barrido!
+              h5#hero-subtitle Encuentra expertos en limpieza cerca de ti
             .searchbox
               form(style="height: 100%;", action="https://servicios.homely.mx")
                 input(type='text', name="neighborhood", placeholder='Escribe tu colonia', onkeyup='initialize()')#searchTextField
-                button(type='button', name='button')
+                button(type='submit', name='button')
                   | Buscar
                   img.icon(src='images/icons/chevron-right.png', alt='')
-          a(href="https://servicios.jelpmi.mx")
+          a(href="https://servicios.homely.mx/cotizador/firstStep/clean")
             #search-button
                 | Buscar expertos en limpieza
           .badge
@@ -72,33 +92,33 @@ html(lang='en', dir='ltr')
           .col-md.d-flex.justify-content-end.align-items-center#keepers-grid
             .photo-grid
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-01.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-01.jpg')")
                   div
                     img(src='images/emojis/faces-cool.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-02.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-02.jpg')")
                   div
                     img(src='images/emojis/faces-crack.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-03.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-03.jpg')")
                   div
                     img(src='images/emojis/faces-cute.png', alt='')
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-04.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-04.jpg')")
                   div
                     img(src='images/emojis/faces-nerd.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-05.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-05.jpg')")
                   div
                     img(src='images/emojis/faces-meh.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-06.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-06.jpg')")
                   div
                     img(src='images/emojis/faces-good.png', alt='')
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-07.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-07.jpg')")
                   div
                     img(src='images/emojis/faces-wink.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-08.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-08.jpg')")
                   div
                     img(src='images/emojis/faces-xd.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-09.png')")
+                .photo-cell(style="background-image: url('images/photos/keepers/keeper-09.jpg')")
                   div
                     img(src='images/emojis/faces-satisfy.png', alt='')
     .container

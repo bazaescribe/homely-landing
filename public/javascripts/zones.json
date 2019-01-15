@@ -32,6 +32,7 @@ zones = [
   { "city":"GT","name":"Guanajuato","status":"SOON"},
   { "city":"GT","name":"León","status":"SOON"},
   { "city":"JL","name":"Guadalajara","status":"ON"},
+  { "city":"JL","name":"Puerto Vallarta","status":"SOON"},
   { "city":"JL","name":"Tlaquepaque","status":"SOON"},
   { "city":"JL","name":"Zapopan","status":"ON"},
   { "city":"MR","name":"Cuernavaca","status":"SOON"},
