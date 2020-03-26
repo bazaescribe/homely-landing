@@ -52,6 +52,8 @@ html(lang='en', dir='ltr')
     script(type='text/javascript').
       _atrk_opts = { atrk_acct:"Jhx0p1IWhd10Y8", domain:"homely.mx",dynamic: true};
       (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    script(type='text/javascript').
+      !function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s);}(document);
     noscript
       img(src='https://certify.alexametrics.com/atrk.gif?account=Jhx0p1IWhd10Y8', style='display:none', height='1', width='1', alt='')
     // End Alexa Certify Javascript
@@ -74,7 +76,11 @@ html(lang='en', dir='ltr')
                 input(type='text', name="neighborhood", placeholder='Escribe tu colonia', onkeyup='initialize()')#searchTextField
                 button(type='submit', name='button')
                   | Buscar
-                  img.icon(src='images/icons/chevron-right.png', alt='')
+                  picture
+                    source(type='image/webp' srcset='images/icons/chevron-right.webp')
+                    source(type='image/png' srcset='images/icons/chevron-right.png')
+                    img.icon(src='images/icons/chevron-right.png', alt='')
+                  
           a(href="https://servicios.homely.mx")
             #search-button
                 | Buscar expertos en limpieza
@@ -150,7 +156,10 @@ html(lang='en', dir='ltr')
     .container
       .row.section
         .col-md-6.d-flex.align-items-center.justify-content-center#services-photo
-          img(src='images/photos/services.png', alt='', style='width: 80%;')
+          picture
+              source(type='image/webp' srcset='images/photos/services.webp')
+              source(type='image/webp' srcset='images/photos/services.jpg')
+              img(src='images/photos/services.png', alt='', style='width: 80%;')
         .col-md-6
           h2 El servicio que necesitas
           p

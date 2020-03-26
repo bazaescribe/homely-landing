@@ -57,7 +57,10 @@ html
           .col-md-4
             .perk
               .image
-                img(src="images/icons/healt.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/healt.webp' style="width: 30%;",)
+                  source(type='image/png' srcset='images/icons/healt.png' style="width: 30%;",)
+                  img(src="images/icons/healt.png", style="width: 30%;", alt="")
               .content
                 h4 Seguro de gastos médicos
                 p  Todos los keepers cuentan con un seguro de gastos médicos para cubrirte en todo momento durante tus servicios.
