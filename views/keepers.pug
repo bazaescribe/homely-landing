@@ -67,14 +67,20 @@ html
           .col-md-4
             .perk
               .image
-                img(src="images/icons/time.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/time.webp' style="width: 30%;",)
+                  source(type='image/png' srcset='images/icons/time.png' style="width: 30%;",)
+                  img(src="images/icons/time.png", style="width: 30%;", alt="")
               .content
                 h4 Pago justo por hora
                 p  Todos los servicios se pagan por hora, nunca tendrás que preocuparte por jefes abusivos.
           .col-md-4
             .perk
               .image
-                img(src="images/icons/money.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/money.webp' style="width: 30%;",)
+                  source(type='image/png' srcset='images/icons/money.png' style="width: 30%;",)
+                  img(src="images/icons/money.png", style="width: 30%;", alt="")
               .content
                 h4 Tu dinero cada semana
                 p  Trabaja con la certeza de que siempre recibiras tu dinero de manera segura en tu cuenta bancaria.

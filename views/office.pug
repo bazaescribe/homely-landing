@@ -59,11 +59,26 @@ html(lang='en', dir='ltr')
         .row
           .col-md-12
             .logo-strip
-              img(src='images/logos/moronas.png', alt='')
-              img(src='images/logos/greenpeace.png', alt='')
-              img(src='images/logos/dentalia.png', alt='')
-              img(src='images/logos/victoria147.png', alt='')
-              img(src='images/logos/23.png', alt='')
+              picture
+                source(type='image/webp' srcset='images/logos/moronas.webp')
+                source(type='image/png' srcset='images/logos/moronas.png')
+                img(src='images/logos/moronas.png', alt='')
+              picture
+                source(type='image/webp' srcset='images/logos/greenpeace.webp')
+                source(type='image/png' srcset='images/logos/greenpeace.png')
+                img(src='images/logos/greenpeace.png', alt='')
+              picture
+                source(type='image/webp' srcset='images/logos/dentalia.webp')
+                source(type='image/png' srcset='images/logos/dentalia.png')
+                img(src='images/logos/dentalia.png', alt='')
+              picture
+                source(type='image/webp' srcset='images/logos/victoria147.webp')
+                source(type='image/png' srcset='images/logos/victoria147.png')
+                img(src='images/logos/victoria147.png', alt='')
+              picture
+                source(type='image/webp' srcset='images/logos/23.webp')
+                source(type='image/png' srcset='images/logos/23.png')
+                img(src='images/logos/23.png', alt='')
     .container.section
       .row
         .col-md-12
