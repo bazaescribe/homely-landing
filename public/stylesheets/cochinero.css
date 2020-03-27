@@ -148,7 +148,7 @@ html {
   .webp select {
     height: 48px;
     background: var(--color-white);
-    background-image: url(../images/icons/chevron.png);
+    background-image: url(../images/icons/chevron.webp);
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: 95%;
@@ -161,7 +161,7 @@ html {
     padding-top: 40px;
     padding-bottom: 40px; }
   .webp ul {
-    list-style-image: url("../images/icons/bullet.png"); }
+    list-style-image: url("../images/icons/bullet.webp"); }
   .webp li {
     margin-bottom: 12px; }
   @media only screen and (max-width: 767px) {
@@ -235,7 +235,7 @@ html {
     left: 8px; }
   .webp #search-button {
     background: white;
-    background-image: url(../images/icons/search.png);
+    background-image: url(../images/icons/search.webp);
     background-size: 30px;
     background-position: 96%;
     background-repeat: no-repeat;
@@ -260,13 +260,13 @@ html {
   .webp .badge img {
     width: 140px; }
   .webp #hero-landing {
-    background: linear-gradient(rgba(0, 0, 0, 0.08) 70%, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.8)), url("../images/photos/home-hero-ii.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.08) 70%, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.8)), url("../images/photos/home-hero-ii.webp");
     background-size: cover;
     background-position: center; }
   .webp #hero-text {
     text-shadow: 0px 4px 32px rgba(63, 68, 76, 0.32); }
   .webp #hero-pro {
-    background: linear-gradient(rgba(48, 50, 59, 0.6), rgba(48, 50, 59, 0.6)), url("../images/photos/office-hero.jpg");
+    background: linear-gradient(rgba(48, 50, 59, 0.6), rgba(48, 50, 59, 0.6)), url("../images/photos/office-hero.webp");
     background-size: cover; }
   .webp .hero-micro {
     background: var(--color-indigo);
@@ -601,7 +601,7 @@ input[type="text"]:focus {
 select {
   height: 48px;
   background: var(--color-white);
-  background-image: url(../images/icons/chevron.png);
+  background-image: url(../images/icons/chevron.webp);
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: 95%;
@@ -616,7 +616,7 @@ select {
   padding-bottom: 40px; }
 
 ul {
-  list-style-image: url("../images/icons/bullet.png"); }
+  list-style-image: url("../images/icons/bullet.e"); }
 
 li {
   margin-bottom: 12px; }

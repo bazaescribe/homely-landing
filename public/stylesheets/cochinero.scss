@@ -203,7 +203,7 @@ html{
   select{
     height: 48px;
     background: var(--color-white);
-    background-image: url(../images/icons/chevron.png);
+    background-image: url(../images/icons/chevron.webp);
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: 95%;
@@ -220,7 +220,7 @@ html{
   }
 
   ul {
-    list-style-image: url('../images/icons/bullet.png');
+    list-style-image: url('../images/icons/bullet.webp');
   }
 
   li{
@@ -337,7 +337,7 @@ html{
 
   #search-button{
     background: white;
-    background-image: url(../images/icons/search.png);
+    background-image: url(../images/icons/search.webp);
     background-size: 30px;
     background-position: 96%;
     background-repeat: no-repeat;
@@ -381,7 +381,7 @@ html{
         rgba(0, 0, 0, 0.32),
         rgba(0, 0, 0, 0.8)
       ),
-      url('../images/photos/home-hero-ii.jpg');
+      url('../images/photos/home-hero-ii.webp');
     background-size: cover;
     background-position: center;
   }
@@ -396,7 +396,7 @@ html{
         rgba(48, 50, 59, 0.6),
         rgba(48, 50, 59, 0.6)
       ),
-      url('../images/photos/office-hero.jpg');
+      url('../images/photos/office-hero.webp');
     background-size: cover;
   }
 
@@ -715,6 +715,7 @@ html{
 }
 
 
+
 h1{
   font-family: "Roboto Slab", "Roboto", sans-serif;
   font-weight: 700;
@@ -892,7 +893,7 @@ input[type="text"]:focus{
 select{
   height: 48px;
   background: var(--color-white);
-  background-image: url(../images/icons/chevron.png);
+  background-image: url(../images/icons/chevron.webp);
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: 95%;
@@ -909,7 +910,7 @@ select{
 }
 
 ul {
-  list-style-image: url('../images/icons/bullet.png');
+  list-style-image: url('../images/icons/bullet.e');
 }
 
 li{
