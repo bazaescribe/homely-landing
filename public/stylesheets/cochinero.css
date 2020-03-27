@@ -299,10 +299,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 60px; }
+    padding-top: 60px;
+    background-image: url("../images/photos/cities-hero.webp"); }
+  .webp .hero-background {
+    background-image: url("../images/photos/cities-hero.webp"); }
   @media only screen and (max-width: 767px) {
     .webp .hero-section {
-      background-position: center; }
+      background-position: center;
+      background-image: url("../images/photos/cities-hero.webp"); }
     .webp .dephased:before {
       border: 0px solid var(--color-indigo); } }
   .webp .sections-column {
@@ -380,6 +384,24 @@ html {
     height: 160px;
     width: 140px;
     background-size: cover; }
+  .webp .keeper-one {
+    background-image: url("../images/photos/keepers/keeper-01.webp"); }
+  .webp .keeper-two {
+    background-image: url("../images/photos/keepers/keeper-02.webp"); }
+  .webp .keeper-three {
+    background-image: url("../images/photos/keepers/keeper-03.webp"); }
+  .webp .keeper-four {
+    background-image: url("../images/photos/keepers/keeper-04.webp"); }
+  .webp .keeper-five {
+    background-image: url("../images/photos/keepers/keeper-05.webp"); }
+  .webp .keeper-six {
+    background-image: url("../images/photos/keepers/keeper-06.webp"); }
+  .webp .keeper-seven {
+    background-image: url("../images/photos/keepers/keeper-07.webp"); }
+  .webp .keeper-eight {
+    background-image: url("../images/photos/keepers/keeper-08.webp"); }
+  .webp .keeper-nine {
+    background-image: url("../images/photos/keepers/keeper-09.webp"); }
   .webp .photo-cell img {
     width: 100%; }
   .webp .photo-cell div {
@@ -783,11 +805,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px; }
+  padding-top: 60px;
+  background-image: url("../images/photos/cities-hero.jpg"); }
 
 @media only screen and (max-width: 767px) {
   .hero-section {
-    background-position: center; }
+    background-position: center;
+    background-image: url("../images/photos/cities-hero.jpg"); }
   .dephased:before {
     border: 0px solid var(--color-indigo); } }
 
@@ -890,6 +914,33 @@ li {
   height: 160px;
   width: 140px;
   background-size: cover; }
+
+.keeper-one {
+  background-image: url("../images/photos/keepers/keeper-01.jpg"); }
+
+.keeper-two {
+  background-image: url("../images/photos/keepers/keeper-02.jpg"); }
+
+.keeper-three {
+  background-image: url("../images/photos/keepers/keeper-03.jpg"); }
+
+.keeper-four {
+  background-image: url("../images/photos/keepers/keeper-04.jpg"); }
+
+.keeper-five {
+  background-image: url("../images/photos/keepers/keeper-05.jpg"); }
+
+.keeper-six {
+  background-image: url("../images/photos/keepers/keeper-06.jpg"); }
+
+.keeper-seven {
+  background-image: url("../images/photos/keepers/keeper-07.jpg"); }
+
+.keeper-eight {
+  background-image: url("../images/photos/keepers/keeper-08.jpg"); }
+
+.keeper-nine {
+  background-image: url("../images/photos/keepers/keeper-09.jpg"); }
 
 .photo-cell img {
   width: 100%; }
