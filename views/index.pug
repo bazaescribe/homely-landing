@@ -52,6 +52,8 @@ html(lang='en', dir='ltr')
     script(type='text/javascript').
       _atrk_opts = { atrk_acct:"Jhx0p1IWhd10Y8", domain:"homely.mx",dynamic: true};
       (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    script(type='text/javascript').
+      !function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s);}(document);
     noscript
       img(src='https://certify.alexametrics.com/atrk.gif?account=Jhx0p1IWhd10Y8', style='display:none', height='1', width='1', alt='')
     // End Alexa Certify Javascript
@@ -74,7 +76,11 @@ html(lang='en', dir='ltr')
                 input(type='text', name="neighborhood", placeholder='Escribe tu colonia', onkeyup='initialize()')#searchTextField
                 button(type='submit', name='button')
                   | Buscar
-                  img.icon(src='images/icons/chevron-right.png', alt='')
+                  picture
+                    source(type='image/webp' srcset='images/icons/chevron-right.webp')
+                    source(type='image/png' srcset='images/icons/chevron-right.png')
+                    img.icon(src='images/icons/chevron-right.png', alt='')
+                  
           a(href="https://servicios.homely.mx")
             #search-button
                 | Buscar expertos en limpieza
@@ -84,19 +90,40 @@ html(lang='en', dir='ltr')
       .row.section
         .col-md-12.d-flex.justify-content-between.flex-wrap.press-logos
           a.wow.fadeIn(href='https://www.reforma.com/aplicacioneslibre/articulo/default.aspx?id=813843&md5=acf74f2800c08f9fea7a269c95956816&ta=0dfdbac11765226904c16cb9ad1b2efe&lcmd5=1953be67ca081ee3b7c7affe61197d5a', target='_blank', data-wow-delay='0.1s')
-            img(src='images/logos/reforma.png', alt='Periódico Reforma')
+            picture
+              source(type='image/webp' srcset='images/logos/reforma.webp')
+              source(type='image/png' srcset='images/logos/reforma.png')
+              img(src='images/logos/reforma.png', alt='Periódico Reforma')
           a.wow.fadeIn(href='https://youtu.be/MZiQjzn1bOI', target='_blank', data-wow-delay='0.2s')
-            img(src='images/logos/sony.png', alt='Canal Sony Televisión')
+            picture
+              source(type='image/webp' srcset='images/logos/sony.webp')
+              source(type='image/png' srcset='images/logos/sony.png')
+              img(src='images/logos/sony.png', alt='Canal Sony Televisión')
           a.wow.fadeIn(href='https://www.eluniversal.com.mx/articulo/metropoli/df/2016/02/24/limpieza-domestica-al-alcance-de-una-app', target='_blank', data-wow-delay='0.3s')
-            img(src='images/logos/universal.png', alt='Periódico El Universal')
+            picture
+              source(type='image/webp' srcset='images/logos/universal.webp')
+              source(type='image/png' srcset='images/logos/universal.png')
+              img(src='images/logos/universal.png', alt='Periódico El Universal')
           a.wow.fadeIn(href='https://www.milenio.com/negocios/emprender-en-mexico/melina_cruz-jelpmi-negocio-mexico_busca_pasion_emprender-milenio_noticias_0_1050495188.html', target='_blank', data-wow-delay='0.4s')
-            img(src='images/logos/milenio.png', alt='Milenio Diario')
+            picture
+              source(type='image/webp' srcset='images/logos/milenio.webp')
+              source(type='image/png' srcset='images/logos/milenio.png')
+              img(src='images/logos/milenio.png', alt='Milenio Diario')
           a.wow.fadeIn(href='https://medium.com/mujer-del-futuro/jelpmi-la-primera-inversi%C3%B3n-de-ana-victoria-en-shark-tank-5f104b0fad99', target='_blank', data-wow-delay='0.4s')
-            img(src='images/logos/victoria147.png', alt='victoria147')
+            picture
+              source(type='image/webp' srcset='images/logos/victoria147.webp')
+              source(type='image/png' srcset='images/logos/victoria147.png')
+              img(src='images/logos/victoria147.png', alt='victoria147')
           a.wow.fadeIn(href='https://www.imagenradio.com.mx/gabriela-ferriz/conoce-jelpmi-el-nuevo-servicio-de-limpieza', target='_blank', data-wow-delay='0.5s')
-            img(src='images/logos/imagen.png', alt='Grupo Imagen Multimedia')
+            picture
+              source(type='image/webp' srcset='images/logos/imagen.webp')
+              source(type='image/png' srcset='images/logos/imagen.png')
+              img(src='images/logos/imagen.png', alt='Grupo Imagen Multimedia')
           a.wow.fadeIn(href='https://www.entrepreneur.com/article/311983', target='_blank', data-wow-delay='0.5s')
-            img(src='images/logos/entrepreneur.png', alt='Entrepreneur')
+            picture
+              source(type='image/webp' srcset='images/logos/entrepreneur.webp')
+              source(type='image/png' srcset='images/logos/entrepreneur.png')
+              img(src='images/logos/entrepreneur.png', alt='Entrepreneur')
     .section.interest-section
       .container
         .row
@@ -118,39 +145,69 @@ html(lang='en', dir='ltr')
           .col-md.d-flex.justify-content-end.align-items-center#keepers-grid
             .photo-grid
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-01.jpg')")
+                .photo-cell.keeper-one
                   div
-                    img(src='images/emojis/faces-cool.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-02.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-cool.webp')
+                      source(type='image/png' srcset='images/emojis/faces-cool.png')
+                      img(src='images/emojis/faces-cool.png', alt='')
+                .photo-cell.keeper-two
                   div
-                    img(src='images/emojis/faces-crack.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-03.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-crack.webp')
+                      source(type='image/png' srcset='images/emojis/faces-crack.png')
+                      img(src='images/emojis/faces-crack.png', alt='')
+                .photo-cell.keeper-three
                   div
-                    img(src='images/emojis/faces-cute.png', alt='')
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-cute.webp')
+                      source(type='image/png' srcset='images/emojis/faces-cute.png')
+                      img(src='images/emojis/faces-cute.png', alt='')
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-04.jpg')")
+                .photo-cell.keeper-four
                   div
-                    img(src='images/emojis/faces-nerd.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-05.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-nerd.webp')
+                      source(type='image/png' srcset='images/emojis/faces-nerd.png')
+                      img(src='images/emojis/faces-nerd.png', alt='')
+                .photo-cell.keeper-five
                   div
-                    img(src='images/emojis/faces-meh.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-06.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-meh.webp')
+                      source(type='image/png' srcset='images/emojis/faces-meh.png')
+                      img(src='images/emojis/faces-meh.png', alt='')
+                .photo-cell.keeper-six
                   div
-                    img(src='images/emojis/faces-good.png', alt='')
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-good.webp')
+                      source(type='image/png' srcset='images/emojis/faces-good.png')
+                      img(src='images/emojis/faces-good.png', alt='')
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-07.jpg')")
+                .photo-cell.keeper-seven
                   div
-                    img(src='images/emojis/faces-wink.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-08.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-wink.webp')
+                      source(type='image/png' srcset='images/emojis/faces-wink.png')
+                      img(src='images/emojis/faces-wink.png', alt='')
+                .photo-cell.keeper-eight
                   div
-                    img(src='images/emojis/faces-xd.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-09.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-xd.webp')
+                      source(type='image/png' srcset='images/emojis/faces-xd.png')
+                      img(src='images/emojis/faces-xd.png', alt='')
+                .photo-cell.keeper-nine
                   div
-                    img(src='images/emojis/faces-satisfy.png', alt='')
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-satisfy.webp')
+                      source(type='image/png' srcset='images/emojis/faces-satisfy.png')
+                      img(src='images/emojis/faces-satisfy.png', alt='')
     .container
       .row.section
         .col-md-6.d-flex.align-items-center.justify-content-center#services-photo
-          img(src='images/photos/services.png', alt='', style='width: 80%;')
+          picture
+              source(type='image/webp' srcset='images/photos/services.webp' style='width: 80%;')
+              source(type='image/png' srcset='images/photos/services.png' style='width: 80%;')
+              img(src='images/photos/services.png', alt='', style='width: 80%;')
         .col-md-6
           h2 El servicio que necesitas
           p

@@ -22,15 +22,24 @@ html
         .col-md-3.sections-column
           .section-button(onclick="showSection('terms')")
             .image
-              img(src="images/icons/terms.png")
+              picture
+                source(type='image/webp' srcset="images/icons/terms.webp")
+                source(type='image/png' srcset="images/icons/terms.png")
+                img(src="images/icons/terms.png")
             .text Términos y condiciones
           .section-button(onclick="showSection('privacy')") 
             .image
-              img(src="images/icons/VIP.png")
+              picture
+                source(type='image/webp' srcset="images/icons/VIP.webp")
+                source(type='image/png' srcset="images/icons/VIP.png")
+                img(src="images/icons/VIP.png")
             .text Aviso de privacidad
           .section-button(onclick="showSection('rules')") 
             .image
-              img(src="images/icons/rules.png")
+              picture
+                source(type='image/webp' srcset="images/icons/rules.webp")
+                source(type='image/png' srcset="images/icons/rules.png")
+                img(src="images/icons/rules.png")
             .text Reglas de la comunidad
         .col-md-9.content-column
           #terms
