@@ -1,0 +1,68 @@
+.DisinfectionBanner {
+  text-decoration: none;
+}
+.DisinfectionBanner .DisinfectionBanner__container {
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  max-width: 42.75rem;
+  height: 11.25rem;
+  border-radius: 0.5rem;
+  background: url('https://firebasestorage.googleapis.com/v0/b/jelpmi-produccion.appspot.com/o/other-services%2Fdisinfection-banner.png?alt=media&token=ef45f49e-e9a7-4365-827b-756c0994321c');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 35%;
+}
+@media (min-width: 960px) {
+  .DisinfectionBanner .DisinfectionBanner__container {
+    background-position-x: center;
+ }
+}
+.DisinfectionBanner .DisinfectionBanner__container > h5 {
+  color: white;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+@media (min-width: 600px) {
+  .DisinfectionBanner .DisinfectionBanner__container > h5 {
+    margin-right: 1.875rem;
+ }
+}
+.DonationBanner {
+  text-decoration: none;
+}
+.DonationBanner .DonationBanner__container {
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  max-width: 42.75rem;
+  height: 11.25rem;
+  border-radius: 0.5rem;
+  background: url('https://firebasestorage.googleapis.com/v0/b/jelpmi-produccion.appspot.com/o/other-services%2Fdonations-banner.png?alt=media&token=e436db1f-8dfe-4803-8b95-342d674c8e88');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 65%;
+  background-color: #f1bc8b;
+}
+@media (min-width: 960px) {
+  .DonationBanner .DonationBanner__container {
+    background-size: auto;
+    padding-left: 3.125rem;
+    background-position-x: center;
+    padding-left: 2.5rem;
+ }
+}
+.DonationBanner .DonationBanner__container > h5 {
+  color: white;
+  max-width: 45%;
+  color: #2d2275;
+}
+@media (min-width: 600px) {
+  .DonationBanner .DonationBanner__container > h5 {
+    max-width: 55%;
+ }
+}
