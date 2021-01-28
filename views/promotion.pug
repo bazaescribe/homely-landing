@@ -1,0 +1,501 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Homely - Pásale a lo barrido
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel='stylesheet', href='stylesheets/cochinero.css')
+    link(rel='shortcut icon', href='images/icons/favicon.png')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
+
+    script(src='javascripts/terms.js')
+
+  body(onload="getURL()")
+    include includes/navbar
+
+    .hero-section.d-flex.align-items-center(style="background-image: url('images/photos/terms-hero.jpg')")
+      h1 Promociones
+
+    .container
+      .row
+        .col-md-3.sections-column
+          .section-button(onclick="showSection('terms')")
+            .image
+              picture
+                source(type='image/webp' srcset="images/icons/terms.webp")
+                source(type='image/png' srcset="images/icons/terms.png")
+                img(src="images/icons/terms.png")
+            .text Términos y condiciones
+          .section-button(onclick="showSection('privacy')") 
+            .image
+              picture
+                source(type='image/webp' srcset="images/icons/VIP.webp")
+                source(type='image/png' srcset="images/icons/VIP.png")
+                img(src="images/icons/VIP.png")
+            .text Aviso de privacidad
+          .section-button(onclick="showSection('rules')") 
+            .image
+              picture
+                source(type='image/webp' srcset="images/icons/rules.webp")
+                source(type='image/png' srcset="images/icons/rules.png")
+                img(src="images/icons/rules.png")
+            .text Reglas de la comunidad
+        .col-md-9.content-column
+          #terms
+            p.p1
+              span.s1
+                h3 Términos y condiciones del servicio
+            p.p3
+              span.s1
+                | Los presentes términos de uso establecen las condiciones bajo las que puedes utilizar tanto nuestro sitio, como nuestra aplicación para poder solicitar los servicios de las personas que anuncian su disponibilidad a través del mismo, en lo sucesivo los “keepers”. www.homely.mx es un sitio de Grupo MIRCAVI S.A. de C.V., en lo sucesivo “Homely”, con domicilio en Calle Aragón 199. Col. Álamos. Del. Benito Juárez. CP 03400, en la Ciudad de México.
+            p.p4  
+                span.s1
+                  strong 1. Aceptación
+            p.p5
+              span.s1
+                | El uso de nuestro sitio, de nuestra aplicación, tu registro como usuario del sitio o receptor de nuestros newsletters o la solicitud de servicios a través de nuestro sitio, representa tu aceptación expresa de los presentes términos de uso y condiciones del servicio.
+                br
+                br
+                span.s1
+                  strong 2. Validación de cuenta
+            p.p5
+              span.s1
+                | Al registrarte para utilizar nuestro sitio o suscribirte a nuestros servicios, llevaremos a cabo un proceso de validación de tu cuenta de correo electrónico. La verificación y validación de tu cuenta se llevará a cabo mediante el envío de un correo electrónico que contendrá́ una liga para la verificación y activación de la cuenta o mediante el envío de un mensaje de texto (SMS) al teléfono celular que nos proporciones. Dicho mensaje de texto (SMS) contendrá́ un código de activación que deberás introducir en el sitio al que te lleve la liga de validación de cuenta que recibas en tu correo electrónico. Tu cuenta de correo electrónico y tu teléfono celular constituyen los medios de comunicación oficial entre tú y “Homely” por lo que, al validar tu cuenta de correo electrónico y teléfono celular, otorgas tu consentimiento expreso para que todas las notificaciones que te realicemos a través del mismo, tengan validez legal en términos de lo dispuesto por el Código de Comercio, Código Civil Federal y Código Federal de Procedimientos Civiles.
+                br
+                br
+                span.s1
+                  strong 3. Solicitud de servicios a través del sitio o aplicación
+            p.p5
+              span.s1
+                | Una vez registrado en nuestro sitio o aplicación, podrás solicitar los servicios ofrecidos por los “Keepers”. Los servicios pueden ser solicitados por periodos desde 3 hasta 8 horas bajo cuatro modalidades diferentes. Las modalidades existentes son “Homely” suscripción, “Homely” recurrente, “Homely” exprés y “Homely” único.
+            p.p5
+              span.s1
+                | En la modalidad de <strong>“Homely” suscripción</strong> podrás programar  un plan de servicios para los días y horas designados de manera previa; la solicitud debe hacerse con al menos 24 horas de anticipación; los planes de suscripción se renuevan de manera automática el mismo día en que se contrata el plan inicial de cada mes y el usuario podrá cancelarlo cuando lo desee sin costo alguno, los planes de suscripción serán planes prepago.
+            p.p5
+              span.s1
+                | En dicha modalidad, el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio.
+            p.p5
+              span.s1
+                | En la modalidad de <strong>“Homely” recurrente</strong> podrás programar la prestación del servicio para los días y horas designados de manera previa; la solicitud debe hacerse con al menos 24 horas de anticipación.
+            p.p5
+              span.s1
+                | En dicha modalidad el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio.
+            p.p5
+              span.s1
+                | Bajo esta modalidad, se prestará el servicio por un mínimo de tres horas y se pagará la hora de conformidad con el precio establecido en la solicitud del servicio teniendo como base los precios del punto 7 de los presentes términos de uso y condiciones de servicio.
+            p.p5
+              span.s1
+                | En la modalidad de “Homely” exprés podrás solicitar la prestación del servicio sin necesidad de programarlo con 24 horas de anticipación.
+            p.p5
+              span.s1
+                | En dicha modalidad, te pedimos por favor, considerar que el “keeper” puede demorar mínimo 2 horas en llegar, dependiendo de la distancia a la que se encuentre del lugar donde solicites el servicio y de las condiciones de tráfico en la Ciudad. El servicio exprés se contratará por cuando menos tres horas y su precio se pagará conforme a lo establecido en el punto 7 de los presentes términos de uso y condiciones del servicio.
+            p.p5
+              span.s1
+                | En la modalidad de <strong>“Homely” único</strong> podrás programar la prestación del servicio para un día y hora designados de manera previa en una única visita al domicilio; la solicitud debe hacerse con al menos 24 horas de anticipación.
+            p.p5
+              span.s1
+                | En dicha modalidad el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio.
+            p.p5
+              span.s1
+                | Bajo esta modalidad, se prestará el servicio por un mínimo de tres horas y se pagará la hora de conformidad con el precio establecido en el punto 7 de los presentes términos de uso y condiciones de servicio. 
+            p.p5
+              span.s1
+                strong
+                 | En todos los casos, la prestación de los servicios está sujeta a la disponibilidad y aceptación por parte de los “Keepers”.
+                br
+                br
+                span.s1
+                  strong 4. Servicios ofrecidos por los keepers
+               
+                  li.li3
+                    span.s1 Servicio básico (duración mínima de 3 horas) par las diferentes modalidades:
+                  ol.ol2
+                    li.li3
+                      span.s1 Limpieza de hasta dos recamaras.
+                    li.li3
+                      span.s1 Limpieza de hasta dos baños.
+                    li.li3
+                      span.s1 Limpieza de sala-comedor.
+                    li.li3
+                      span.s1 Limpieza de cocina (no incluye limpieza de horno ni refrigerador).
+                  li.li3
+                    span.s1 Servicio a la medida:
+                  ol.ol2
+                    li.li3
+                      span.s1
+                        | El servicio a la medida comprenderá el servicio básico más las opciones que solicites adicionales. En función de las opciones adicionales que añadas, se incrementará el costo del servicio conforme a lo establecido en el punto 7 de los presentes términos de uso y condiciones del servicio.
+                br
+                span.s1
+                  strong 5. Limitación de responsabilidad  
+
+            p.p5
+              span.s1
+                | “Homely” sirve únicamente como medio de contacto y gestor de pagos entre tú y el “Keeper”. “Homely” no presta ni ofrece otros servicios que no sean los de publicidad para los “Keepers” y los servicios de contacto y gestión de pagos para ti en relación con el “keeper”.
+            p.p5
+              span.s1
+                | En consecuencia, “Homely” no será́ responsable de ningún problema que pueda surgir entre el “keeper” y tú, así como tampoco será responsable de ningún daño o perjuicio que puedan ocasionarse las partes. Al término de la prestación del servicio por parte del “keeper”, podrás evaluar la calidad del mismo y el “keeper” podrá́ evaluarte también.
+            p.p5
+              span.s1
+                | “Homely” para beneficio de los usuarios cuenta con un seguro de responsabilidad civil con cobertura a daños a terceros, el cual tiene una cobertura de hasta $1,000,000 MXN en caso de daños o accidentes ocasionados por las labores que el keeper realiza en el domicilio a objetos o al domicilio del usuario. Las limitantes y exclusiones a la cobertura del mismo son las siguientes:
+             
+              ol.ol2
+                li.li3
+                  span.s1 Dinero en efectivo como en documentos.
+                li.li3
+                  span.s1 Reclamaciones por actividades diferentes a las descritas.
+                li.li3
+                  span.s1
+                    | Daños no atribuibles al asegurado debido a la imprudencia, mal uso o negligencia de los usuarios.
+                li.li3
+                  span.s1
+                    | Animales vivos, solventes en general, toda clase de semillas, pinturas y obras de arte, productos químicos inflamables, combustibles (petróleo, gas, gasolina) carbón, barnices, maderas, pegamentos, velas y/o veladores, armas de fuego, algodón, cerillos, joyería y cristalería.
+                li.li3
+                  span.s1
+                    | Daños o accidentes a objetos con un valor inferior al monto mínimo deducible ($7,000.00 MXN).
+                li.li3
+                  span.s1 Por políticas de la aseguradora, objetos de cristalería, cerámica y porcelana.
+              br
+              span.s1
+                strong 6. Compromiso con Homely  
+            p.p5
+              span.s1
+                | “Homely” tiene como compromiso la satisfacción de las personas que utilicen su plataforma. Por ello, “Homely” se compromete a:
+             
+              ul
+                li.li3
+                  span.s1 Investigar antecedentes de los “Keepers”;
+                li.li3
+                  span.s1
+                    | Establecer requisitos mínimos de presentación e higiene personal como condición para la inclusión de “Keepers” en su plataforma.
+                li.li3
+                  span.s1
+                    | Establecer un sistema de evaluación como referencia para los usuarios de la plataforma con objeto de que sepan a quién están contratando y quién los está́ contratando.
+                li.li3
+                  span.s1
+                    | Proporcionar los datos del “keeper” a solicitud del usuario para el caso de que exista alguna controversia entre este último y el “keeper”.
+            p.p6
+              span.s1  
+            p.p5
+              span.s1
+                | No obstante, nuestro compromiso, “Homely” no ofrece ningún tipo de garantía sobre el desempeño u honestidad de los “Keepers”.
+             
+              br
+              br
+              span.s1
+                strong 7. Precio y pago de los servicios  
+            p.p5
+              span.s1 Los precios por los servicios ofrecidos por los “Keepers” son los siguientes:
+
+                li.li3
+                  span.s1 <strong>Plan mensual suscripción base</strong>: $99 pesos I.V.A. incluido por hora.
+                li.li3
+                  span.s1 <strong>Servicio básico agendado</strong>: $109 pesos I.V.A. incluido por hora.
+                li.li3
+                  span.s1 <strong>Servicio básico exprés</strong>: $144 pesos I.V.A. incluido por hora.
+                li.li3
+                  span.s1 <strong>Servicio básico único</strong>: $114 pesos I.V.A. incluido por hora.
+                li.li3
+                  span.s1
+                    | <strong>Servicio a la medida</strong>: según se agregue tiempo adicional al servicio, se cobrará la fracción de tiempo con el costo por hora según el tipo de servicio que se solicite.
+            p.p5
+              span.s1
+                | En el caso de los planes mensuales, el precio por hora puede modificarse según el número de servicios que el usuario desee incluir en su plan. Las suscripciones son planes que se renovarán de manera automática y el cargo por los servicios se realizarán previo a que el plan inicie; las renovaciones se cobrarán el mismo día en el que se haya contratado el plan inicial de cada mes.
+            p.p5
+              span.s1
+                | Los servicios del tipo recurrente, único y exprés serán cargados posteriormente a que los servicios hayan finalizado.
+            p.p5
+              span.s1
+                | El pago de los servicios que contrates a través de “Homely” se hará con cargo a la tarjeta de crédito o débito que ligues a tu cuenta de usuario. Los pagos serán gestionados por “Homely” pero procesados por Stripe Payment México, S. de R.L. de C.V. (“Stripe”). por lo que “Homely” no tendrá acceso a tu información financiera en ningún momento.
+            p.p5
+              span.s1
+                | Para verificar la validez y vigencia de tu tarjeta de crédito, Stripe Payment México, S. de R.L. de C.V. (“Stripe”) realizará un cargo a la misma por $1.00 (Un peso 00/100, m.n.); el importe de dicho cargo será́ reintegrado una vez que se haya comprobado la validez y vigencia de tu tarjeta de crédito.
+            p.p5
+              span.s1
+                | Asimismo, cuando se solicite un servicio de tipo recurrente, único o exprés se realizará una preautorización por el monto total del servicio solicitado; este monto será autorizado y cargado una vez que el servicio sea brindado y finalizado por parte de la keeper. En caso de que el servicio no sea realizado por falta de asignación de keeper o por cancelación derivado de un retraso mayor a 30 min del keeper, se liberará automáticamente el monto total preautorizado; dependerá completamente de Stripe y el banco emisor de la tarjeta el tiempo en el que la liberación de las preautorización sea reflejado.
+            p.p5
+              span.s1
+                | En los servicios de tipo recurrente se realizará la preautorización del siguiente servicio con una semana de anticipación para garantizar que el usuario cuente con los fondos suficientes; en caso de que la preautorización falle se le notificará al usuario; si no se lograse realizar la preautorizacion del servicio y no se tenga respuesta del usuario, los servicios serán pausados.
+            p.p5
+              span.s1
+                | En el caso de las suscripciones; al ser planes prepago, se hará el cargo por el total de la suscripción en cuanto se solicite y se reanudará de manera automática cada mes hasta que el usuario cancele la suscripción. En caso de que el cargo de la suscripción falle, se le notificará al usuario; si no se lograse realizar el cargo del monto de la suscripción y no se tenga respuesta del usuario, el plan será suspendido hasta el pago integro del plan.
+
+              br
+              br
+              span.s1
+                strong 8. MODIFICACIÓN Y CANCELACIÓN DE LOS SERVICIOS  
+
+            p.p5
+              span.s1
+                | Los diferentes tipos de servicio solicitados a través de la plataforma tienen una política de cancelación y modificación:
+             
+               
+                p.p5
+                  span.s1
+                    | <strong>Planes de suscripción</strong>: El usuario tiene absoluta libertad para cancelar o modifi car sus servicios con más de 24 horas de anticipación sin que dicho servicio sea descontado de su plan o marcado como realizado. En caso de que se realice con hasta 2 horas de anticipación el servicio será marcado como realizado y se descontará del plan de servicio correspondiente; se realizará el pago parcial de este servicio al Keeper como compensación para la persona haya sido asignado al servicio.
+                p.p5
+                  span.s1
+                    | En los planes de suscripción el usuario tiene plena libertad para enviar los servicios a diferentes domicilios; siempre y cuando la modificación sea realizada con más de 24 horas de anticipación; los planes de suscripción podrán ser cancelados sin cargo alguno por el usuario, siempre y cuando la cancelación sea realizada previo al siguiente cargo. 
+                p.p5
+                  span.s1
+                    | En caso de que el cargo automático haya sido procesado; la cancelación será efectiva para el siguiente mes y el usuario podrá hacer uso de sus servicios ya cargados durante el mes en curso.
+
+                p.p5
+                  span.s1
+                    | <strong>Servicios recurrentes</strong>:  Si el servicio se cancela o modifi ca con 24 horas o más de anticipación no se realizará cargo alguno sobre el mismo y se liberará la preautorización correspondiente. En caso de que se realice con hasta 2 horas de anticipación se hará un cargo por $106 MXN; fi nalmente, si el servicio se cancela una vez que el “keeper” ya se encuentra en el domicilio del usuario; se hará el cargo por el servicio completo como compensación para el “keeper” que haya sido asignado al servicio.
+                p.p5
+                  span.s1
+                    | En el caso de los servicios recurrentes, es necesario que al menos 4 servicios sean llevados a cabo en el domicilio del usuario previo a cancelar la serie de servicios; caso contrario se hará un cargo de $100 MXN al usuario adicional a cualquier otro cargo de cancelación sin anticipación correspondiente.
+                p.p5
+                  span.s1
+                    | <strong>Servicios únicos</strong>: Si el servicio se cancela o modifi ca con 24 horas o más de anticipación no se realizará cargo alguno sobre el mismo. En caso de que se realice con hasta 2 horas de anticipación se hará un cargo por $106MXN, correspondientes a una hora de servicio; fi nalmente, si el servicio se cancela el servicio una vez que el “keeper” ya se encuentra en el domicilio del usuario; se hará el cargo por el servicio completo como compensación para el “keeper” que haya sido asignado al servicio y haya acudido.
+                p.p5
+                  span.s1
+                    | <strong>Servicios exprés</strong>: Como estos servicios son solicitados con al menos 2 horas de anticipación, únicamente se hará un cargo en caso de que la cancelación o modifi cación del servicio se haga una vez que el “keeper” se encuentre en el domicilio; de ser así, se hará el cargo por el servicio completo como compensación para el “keeper” que haya sido asignado al servicio y haya acudido.
+              
+              br
+              span.s1
+                strong 9. Privacidad y datos personales
+            p.p5
+              span.s1
+                | Tus datos personales están seguros con “Homely”. Para mayor información sobre los datos que recabamos, la finalidad del tratamiento y el ejercicio de tus derechos ARCO, por favor consulta nuestro aviso de privacidad 
+                a(href="https://www.homely.mx/terms?info=privacy" target="_blank") aquí.
+            p.p5
+              span.s1
+                | Los datos personales que proporciones para la realización del pago de los servicios del “keeper” son recabados y tratados por Stripe Payment México, S. de R.L. de C.V. (“Stripe”) y su tratamiento se encuentra regulado por el aviso de privacidad de Stripe Payment México, S. de R.L. de C.V. (“Stripe”) ubicado en el sitio de 
+                a(href="https://stripe.com/mx/privacy" target="_blank") Stripe.
+                
+
+              br
+              br
+              span.s1
+                strong 10. Propiedad intelectual
+
+            p.p5
+              span.s1
+                | Todos los diseños de nuestros productos, las notas, fotografías y videos publicados en el sitio, así́ como las marcas y logotipos de Homely.mx son propiedad de “Homely”. Queda estrictamente prohibida la reproducción parcial o total de cualquier contenido publicado en nuestro sitio, sin contar con la autorización debida de “Homely”. De la misma forma, queda prohibido el uso de nuestras marcas, sin contar con la autorización por escrito de “Homely”.
+
+              br
+              br
+              span.s1
+                strong 11. Cancelación de cuenta
+            p.p5
+              span.s1
+                | “Homely” se reserva el derecho de cancelar cualquier cuenta en caso de que la misma sea utilizada en contravención a los presentes términos de uso y condiciones del servicio. También podrá́ cancelarse la cuenta de un usuario en el caso de que las evaluaciones recibidas conforme al numeral 6 de los presentes términos de uso y condiciones del servicio sea inferior a 3.0. La decisión de cancelar una cuenta de usuario se hará́ a la entera discreción de “Homely”.
+
+              br
+              br
+              span.s1
+                strong 12. Facturación
+            p.p5
+              span.s1
+                | “Homely” expedirá́ la factura por el total del cargo realizado del servicio que solicites a través de nuestro sitio o aplicación siempre que nos proporciones tus datos fiscales y tu correo electrónico. Por favor envíanos tus datos acontacto@homely.mx
+             
+              br
+              br
+              span.s1
+                strong 13. Legislación aplicable y jurisdicción
+            p.p5
+              span.s1
+                | Tu relación con “Homely” se rige por lo dispuesto en las leyes federales de los Estados Unidos Mexicanos. Por lo anterior, al aceptar los presentes términos de uso, aceptas someterte a la jurisdicción de los Tribunales Federales con sede en la Ciudad de México, Distrito Federal, para la resolución de cualquier controversia que pudiera existir entre “Homely” y tú, renunciando expresamente a cualquier otra jurisdicción que pudiera corresponderte en función de tu domicilio presente o futuro o cualquiera otra circunstancia.
+          #privacy
+          
+            p.p1
+              span.s1
+                h3 Aviso de privacidad
+            p.p2
+              span.s1
+                | El presente aviso de privacidad regula la forma en que trataremos los datos que nos proporciones y aquellos que, con fines estadísticos, recabemos cuando ingreses y utilices nuestros sitios. www.homely.mx es un sitio de Grupo MIRCAVI S.A. de C.V. (“Homely”)
+
+              br
+              br
+              span.s1
+                strong 1. De tus datos
+            p.p3
+              span.s1
+                | “Homely” se compromete a no vender, intercambiar, transferir, compartir, publicar o difundir a terceros ajenos a “Homely” sin tu autorización, los datos que nos proporciones mediante los formularios de registro o de contacto de nuestro sitio. Tus datos son tuyos. La única forma en que nos veríamos obligados a revelar tus datos es mediante la orden de una autoridad competente.
+
+              br
+              br
+              span.s1
+                strong 2. De tu autorización
+            p.p3
+              span.s1
+                | Al registrarte para utilizar nuestros sitios, autorizas a “Homely” a recabar y tratar los datos personales especificados en el punto 5 del presente aviso de privacidad para los fines mencionados en el punto 4 de este mismo aviso. Así mismo, tu registro constituye tu conformidad y aceptación de nuestro aviso de privacidad y las modificaciones que eventualmente pueda llegar a tener.
+             
+              br
+              br
+              span.s1
+                strong 3. De tus derechos ARCO (acceso, rectificación, cancelación y oposición) y cómo ejercerlos
+            p.p3
+              span.s1
+                | En todo momento, mediante el acceso a tu cuenta, podrás acceder, rectificar o cancelar el registro de los datos que nos has proporcionado. De la misma forma, podrás oponerte a que tus datos continúen en nuestra base y darte de baja de la misma. Si tienes alguna duda o no puedes acceder a tu cuenta o tus datos, por favor envía un correo electrónico a privacidad@homely.mx o envía una carta a Grupo MIRCAVI S.A. de C.V., Calle Aragón 199, Col. Álamos, C.P. 03400, Ciudad de México, en atención al Departamento de Atención a Usuarios o comunícate por teléfono a nuestras oficinas al número 8868-4897 o al 7098-2559 y pide que te comuniquen a nuestro Departamento de Atención a Usuarios.
+             
+              br
+              br
+              span.s1
+                strong 4. Del uso de tu información por parte de “Homely”.
+            p.p3
+              span.s1 La información personal que nos proporciones será utilizada para:
+            p.p3
+              span.s1 a) Contactarte sobre cuestiones relacionadas con tu cuenta.
+            p.p3
+              span.s1
+                | b) Hacerte llegar comunicaciones sobre eventos, promociones o noticias de “Homely” o sus aliados comerciales con fines de mercadotecnia, publicidad o prospección comercial.
+            p.p3
+              span.s1 c) Personalizar tu experiencia en la navegación de nuestros sitios.
+            p.p3
+              span.s1
+                | d) Gestionar la contratación de servicios de los keepers a través de nuestro sitio o aplicación.
+            p.p3
+              span.s1 e) Notificarte los cambios que puedan darse en nuestro aviso de privacidad.
+            p.p3
+              span.s1
+                | Las finalidades señaladas en los incisos a), d) y e) son necesarias para la existencia, mantenimiento y cumplimiento de la relación entre tú, como usuario de nuestros sitios, y “Homely”. Las finalidades señaladas en los incisos b y c no son necesarias para la existencia, mantenimiento y cumplimiento de la relación entre tú, como usuario de nuestros sitios, y “Homely” pero sí son necesarios para mejorar tu experiencia en relación a nuestros productos y servicios.
+
+              br
+              br
+              span.s1
+                strong 5. De la información que recolectamos
+            p.p3
+              span.s1
+                | Para tu suscripción al boletín de nuestro sitio recabamos tu correo electrónico. Si deseas suscribirte a nuestro boletín utilizando tu usuario y contraseña de Facebook o Gmail, además de tu correo electrónico recabaremos tu nombre de usuario, nombre y apellidos.
+            p.p3
+              span.s1
+                | Para ponernos en contacto contigo en relación a algún comentario o sugerencia que nos hagas mediante nuestro formato de contacto, recabamos tu nombre, apellidos y correo electrónico.
+            p.p3
+              span.s1
+                | Para personalizar tu experiencia en la navegación de nuestro sitio recabamos el sistema operativo que utilizas, el navegador con que nos visitas, las páginas y artículos que visitas dentro de nuestro sitio, el tiempo que nos haces favor de permanecer en nuestro sitio, los artículos que marcas como favoritos, los artículos que compartes en alguna red social mediante la herramienta que proporcionamos en cada artículo, dirección IP, nombre de usuario y contraseña.
+            p.p3
+              span.s1
+                | Para gestionar las contrataciones de servicios que solicites de los keepers a través de nuestro sitio o aplicación, recabamos tu nombre, apellidos, domicilio, ubicación geográfica y números de teléfono.
+            p.p3
+              span.s1
+                | Para enviarte información sobre eventos, promociones o noticias sobre “Homely” o nuestros aliados comerciales, recabamos tu correo electrónico.
+            p.p3
+              span.s1
+                | Para notificarte los cambios que puedan darse en nuestro aviso de privacidad recabamos tu correo electrónico.
+
+              br
+              br
+              span.s1
+                strong 6. Cookies
+            p.p3
+              span.s1
+                | Si lo autorizas y la configuración de tu máquina nos lo permite, enviaremos un archivo llamado “cookie” que se instalará en tu disco duro para permitirnos identificar las preferencias que hayas seleccionado, en su caso, para mejorar tu experiencia en nuestro sitio conforme a la información mencionada en el inciso c) del punto 5 de este aviso de privacidad. Ninguna de la información que se almacene en el “cookie” será divulgada por “Homely”. Si no deseas que se instale nuestra “cookie” o deseas borrar aquella que ya se haya instalado con tu autorización, deberás hacer lo siguiente:
+            p.p3
+              span.s1
+                | Para no dejar que se instale nuestro “cookie” deberás configurar tu navegador para no aceptar cookies del sitio www.homely.mx.
+            p.p3
+              span.s1
+                | Al borrar o impedir que se instale el “cookie” de nuestro sitio, puedes perder la configuración que hayas realizado para personalizar tu experiencia en nuestro sitio o impedir dicha personalización.
+
+              br
+              br
+              span.s1
+                strong 7. Activación de cuenta
+            p.p3
+              span.s1
+                | Por cuestiones de seguridad, al darte de alta en nuestro sitio y consentir el tratamiento de tus datos conforme al presente aviso de privacidad, te será enviado un correo de verificación y validación que deberás de confirmar para concluir tu aceptación y registro.
+
+              br
+              br
+              span.s1
+                strong 8. Garantía de seguridad
+            p.p3
+              span.s1
+                | No obstante que “Homely” utiliza la tecnología más avanzada para salvaguardar los datos que nos proporcionas, existe la probabilidad de que pueda haber un defecto en la programación de las aplicaciones que utilizamos, que permita el acceso forzado a la información. Aún y cuando esta situación se llegara a dar, tus datos están protegidos mediante procesos de cifrado avanzado que hacen imposible la recuperación útil de la información por un tercero ajeno a “Homely” . Nuestra garantía es hacer todo lo que razonablemente esté a nuestro alcance para resguardar tus datos.
+
+              br
+              br
+              span.s1
+                strong 9. Información de otros sitios
+            p.p3
+              span.s1
+                | Debes tomar en cuenta que la información que alimentas en sitios ajenos a “Homely”]” puede coincidir con aquella que has alimentado o alimentarás en los formularios de “Homely”. En consecuencia, debes estar consciente y ser responsable de tener el mismo cuidado que tienes con tu información en los sitios de “Homely”, en los demás sitios en los que navegues o alimentes información de cualquier tipo.
+             
+              br
+              br
+              span.s1
+                strong 10. Información financiera
+            p.p3
+              span.s1
+                | “Homely” no recaba información financiera. Todas las transacciones de pago son realizadas y gestionadas por Stripe Payment México, S. de R.L. de C.V. (“Stripe”) junto con Openpay, S.A.P.I. de C.V.(“OpenPay”). y su tratamiento se encuentra regulado por el aviso de privacidad de Stripe Payment México, S. de R.L. de C.V. (“Stripe”) ubicado en el sitio https://stripe.com/mx/privacy y y Openpay, S.A.P.I. de C.V.(“OpenPay”) ubicado en el sitio https://www.openpay.mx/aviso-de-privacidad.html
+
+              br
+              br
+              span.s1
+                strong 11. Cambios en la política
+            p.p3
+              span.s1
+                | Es posible que, eventualmente, se realicen cambios a la presente política de privacidad. Te sugerimos visitar frecuentemente esta página para estar al tanto de los posibles cambios o modificaciones que pudiera haber. No te preocupes, con todo y cambios, tu información estará segura con “Homely”
+            p.p3
+              span.s1
+                | Además, cuando se den cambios en nuestro aviso de privacidad, te lo notificaremos al correo electrónico que tengas registrado con nosotros. De esa forma, siempre estarás al tanto de la última versión de nuestro aviso de privacidad.
+
+              br
+              br
+              span.s1
+                strong 12. Contacto y Encargado
+            p.p3
+              span.s1
+                | Si tienes alguna duda o preocupación en relación a la presente política de privacidad o la forma en que manejamos los datos que nos proporcionas o recolectamos, por favor envíanos un mensaje al Departamento de Atención a Usuarios que es el encargado de gestionar los datos recabados en nuestras bases. Para contactarlo, sólo tienes que enviar un correo electrónico a privacidad@homely.mx.
+            p.p3
+              span.s1
+                | Nuestro compromiso es contestarte en un plazo no mayor a 48 horas, salvo en caso de una excesiva carga de trabajo, caso fortuito o de fuerza mayor.
+
+              br
+              br
+              span.s1
+                strong 13. Identidad y Domicilio convencional
+            p.p3
+              span.s1
+                | Tus datos son tratados y resguardados por Grupo MIRCAVI, S.A. de C.V., Aragón 199, Col. Álamos, C.P. 03400, Ciudad de México.
+
+              br
+              br
+              span.s1
+                strong 14. Límites en el uso o divulgación de tus datos
+            p.p3
+              span.s1
+                | Si en un momento dado deseas limitar el uso de tus datos por parte de “Homely”, por ejemplo cancelar tu suscripción a una lista de noticias, pero deseas seguir utilizando los servicios del sitio o recibir otro tipo de comunicados, en el panel de control de tu cuenta puedes seleccionar, habilitar y deshabilitar los usos que, conforme a este aviso de privacidad, nos has autorizado. Te pedimos esperar cinco días hábiles posteriores al cambio para que el mismo se vea reflejado. Esto quiere decir que en ese tiempo es probable que sigas recibiendo, de manera provisional, los comunicados deshabilitados.
+            p.p3
+              span.s1
+                | De igual forma, puedes solicitar la limitación en el uso de tus datos personales enviando un correo electrónico a privacidad@homely.mx o mediante correo postal a Grupo MIRCAVI, S.A. de C.V., Aragón 199, Col. Álamos, C.P. 03400, Ciudad de México , en atención al Departamento de Atención a Usuarios.
+            p.p3
+              span.s1
+                | Ten en cuenta que al limitar el uso de tus datos es posible que no podamos continuar prestándote uno o más de los servicios que hayas solicitado y para los que se necesitan los datos cuyo uso estás limitando.
+
+              br
+              br
+              span.s1
+                strong 15. Transferencia de tus datos
+            p.p3
+              span.s1
+                | Al aceptar el presente aviso de privacidad, autorizas a “Homely” a transferir los datos que nos proporciones o aquellos que recolectemos, a sus socios comerciales y específicamente a los keepers cuyos servicios solicites. En todo momento, “Homely” se asegurará de que sus socios comerciales conozcan el presente aviso de privacidad y se obliguen a acatarlo y respetarlo.
+            p.p3
+              span.s1
+                | Si deseas revocar esta autorización, te pedimos sigas el procedimiento establecido en el punto 16 de este aviso de privacidad.
+
+              br
+              br
+              span.s1
+                strong 16. Revocación de tu consentimiento
+            p.p3
+              span.s1
+                | En cualquier momento, puedes revocar la autorización que nos hayas dado para el tratamiento de tus datos personales. La manera en que puedes llevar a cabo dicha revocación de autorización es solicitándolo mediante correo electrónico a privacidad@homely.mx o mediante correo postal Grupo MIRCAVI, S.A. de C.V., Aragón 199, Col. Álamos, C.P. 03400, Ciudad de México, en atención al Departamento de Atención a Usuarios.
+            p.p3
+              span.s1
+                | Ten en cuenta que al revocar tu autorización es posible que no nos sea posible seguir prestándote el o los servicios para los que utilizamos los datos que recabamos.
+          #rules
+            h3 Reglas de la comunidad
+            br
+            ol
+              li Los keepers prestan servicios de limpieza general para casa y oficinas, procura que el lugar en el que se lleven a cabo estos servicios no implique un riesgo para su integridad.
+              li Para facilitar el traslado, los Keepers no llevan productos de limpieza; por lo que te sugerimos tengas listo lo necesario antes de que la persona responsable llegue a tu domicilio y no se genere ningún retraso en tu servicio.
+              li El tiempo de tu servicio comienza a correr cuando el keeper llegue a tu domicilio. 
+              li Los keepers no reciben llaves de los domicilios donde prestan servicios,  es importante que alguien pueda recibirlo y  despedirlo. 
+              li Si tienes dudas o deseas modificiar o agregar tiempo extra a tu servicio por favor escribirnos a contacto@jelpmi.mx o llámanos al 8868-4897 o al 7098-2559.
+
+    include includes/footer.pug
+    include includes/intercom.pug

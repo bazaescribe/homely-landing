@@ -70,6 +70,10 @@ app.get('/terms', (req, res) => {
   res.render('terms')
 });
 
+app.get('/promotion', (req, res) => {
+  res.render('promotion')
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
