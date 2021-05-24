@@ -41,6 +41,14 @@ html
                 source(type='image/png' srcset="images/icons/rules.png")
                 img(src="images/icons/rules.png")
             .text Reglas de la comunidad
+          .section-button(onclick="showSection('account')") 
+            .image
+              picture
+                // todo cambiar la imagen
+                source(type='image/webp' srcset="https://www.pngkit.com/png/full/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png")
+                source(type='image/png' srcset="https://www.pngkit.com/png/full/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png")
+                img(src="https://www.pngkit.com/png/full/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png")
+            .text Quiero eliminar mi cuenta
         .col-md-9.content-column
           #terms
             p.p1
@@ -514,6 +522,21 @@ html
               li El tiempo de tu servicio comienza a correr cuando el keeper llegue a tu domicilio.
               li Los keepers no reciben llaves de los domicilios donde prestan servicios, es importante que alguien pueda recibirlo y despedirlo.
               li Si tienes dudas o deseas modificiar o agregar tiempo extra a tu servicio por favor escribirnos a hola@homely.mx o llámanos al 8868-4897 o al 7098-2559.
+          #account 
+            h3 Quiero eliminar mis datos sensibles de Homely
+            br
+            p En Homely nos preocupamos del tratamiento de tu información personal, la cual está protegida dentro de nuestras bases de datos. Sin embargo, si deseas eliminar definitivamente toda tu información sensible basta con seguir los siguientes pasos:
+            ol
+              li No tener adeudos.
+              li No tener servicios proximos.
+              li Envia un correo a hola@homely con el asunto: <strong>Deseo eliminar mi cuenta de Homely</strong>. 
+              p El cual debe contener:
+              ul
+                li Nombre completo
+                li Email asociado a tu cuenta Homely
+                li Razón/Motivo  por la que la deseas borrar la cuenta
+              li En un lapso de 48 a 72 horas recibirás un correo de confirmación de eliminación de cuenta con los datos sensibles eliminados
+
           h4 Bienvenido a Homely ¡Ponte cómodo y disfruta!
     include includes/footer.pug
     include includes/intercom.pug
