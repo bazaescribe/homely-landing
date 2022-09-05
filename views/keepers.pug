@@ -50,61 +50,43 @@ html
             span(style="padding: 16px; font-size: 18px;")
               b ó llámanos 📞  
                 a(href="tel:88684897") 8868-4897
-
-    .bg-blue
-      .container.section
-        .row
-          .col-md-4
-            .perk
-              .image
-                img(src="images/icons/healt.png", style="width: 30%;", alt="")
-              .content
-                h4 Seguro de gastos médicos
-                p  Todos los keepers cuentan con un seguro de gastos médicos para cubrirte en todo momento durante tus servicios.
-          .col-md-4
-            .perk
-              .image
-                img(src="images/icons/time.png", style="width: 30%;", alt="")
-              .content
-                h4 Pago justo por hora
-                p  Todos los servicios se pagan por hora, nunca tendrás que preocuparte por jefes abusivos.
-          .col-md-4
-            .perk
-              .image
-                img(src="images/icons/money.png", style="width: 30%;", alt="")
-              .content
-                h4 Tu dinero cada semana
-                p  Trabaja con la certeza de que siempre recibiras tu dinero de manera segura en tu cuenta bancaria.
-          
-    .section.bg-cream(style="background-image: url('images/bgs/pattern-1.png'); background-size: cover;")
-      .container
-        .row.d-flex.align-items-center
-          .col-md-8
-            h2 
-              | Gana hasta $
-              span#income 11,840
-              |  mensuales
-            h6 Puedes lograr estos ingresos trabajando... 
-            br
-            select(name="hours", onchange="calculate()")#hours
-              option(value=3) 3 horas diarias
-              option(value=4) 4 horas diarias
-              option(value=5) 5 horas diarias
-              option(value=6) 6 horas diarias
-              option(value=7) 7 horas diarias
-              option(value=8, selected) 8 horas diarias
-            img(src="images/icons/multiplication.png", alt="", style="margin: 12px;")
-            select(name="days", onchange="calculate()")#days
-              option(value=1) 1 día a la semana
-              option(value=2) 2 días a la semana
-              option(value=3) 3 días a la semana
-              option(value=4) 4 días a la semana
-              option(value=5, selected) 5 días a la semana
-              option(value=6) 6 días a la semana
-              option(value=7) 7 días a la semana
-          .col-md-4
-            img(src="images/photos/keeper-hi.png", alt="Keeper saludando", style="width: 100%")
   
+    .section.bg-grape
+          .container.p-0
+            .col-md-7.p-0.mt-3            
+              h3.text-light.keeper-title Encuentra un esquema de trabajo que se adapte a tus necesidades            
+            .container.p-0
+            .keeper-container      
+              .content
+                .perk.pt-0.keeper-container-info
+
+                  .col-md-12.p-0                  
+                            
+                    h4.keeper-schema Jornada Completa
+                    p.keeper-hours 8 horas al día
+                    ul.keeper-advantage-list                   
+                      li Sueldo mensual base de $5,220
+                      li Pagos semanales ($1,305)
+                      li Prestaciones de Ley
+                      li Bono mensual por Puntualidad $300
+                      li Bono mensual por Calidad $300
+                      li Rifas a los cumpleañeros del mes
+
+                  .col-md-12.p-0
+                       
+                    h4.keeper-schema Medio tiempo
+                    p.keeper-hours 4 horas al día
+                    ul.keeper-advantage-list 
+                      li Sueldo mensual base de *$3,200*
+                      li Pagos semanales ($800)
+                      li AdscrIpción al IMSS Piloto
+                      li Bono mensual por Puntualidad *$100*
+                      li Bono mensual por Calidad *$100*
+                      li Rifas a los cumpleañeros del mes
+                
+              .col-md-6.p-0.keeper-img
+                img(src="images/photos/keepers/keeper-10.png", alt="Keeper-10")
+
     .container.section
       .row
         .col-md-6
