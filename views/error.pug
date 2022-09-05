@@ -17,7 +17,10 @@ html(lang='en', dir='ltr')
     .container.section
       .row
         .col-md-6
-          img(src='images/photos/adios.jpg', alt='')
+          picture
+            source(type='image/webp' srcset='images/photos/adios.webp')
+            source(type='image/jpg' srcset='images/photos/adios.jpg')
+            img(src='images/photos/adios.jpg', alt='')
         .col-md-6
           h1= error.status
           h6= message
@@ -25,3 +28,5 @@ html(lang='en', dir='ltr')
       
     .section
       include includes/footer.pug
+
+    include includes/intercom.pug

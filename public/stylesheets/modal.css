@@ -1,6 +1,5 @@
 /*** MODAL ***/
-
-.screen{
+.webp .screen {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100vh;
@@ -10,43 +9,76 @@
   display: none;
   align-items: center;
   justify-content: center;
-  transition: all 1s ease;
-}
+  transition: all 1s ease; }
 
-.custom-modal{
+.webp .custom-modal {
   background: white;
   box-shadow: 0px 0px 40px -8px rgba(48, 50, 59, 0.3);
   max-width: 640px;
-  display: flex;
-}
+  display: flex; }
 
-.modal--image{
+.webp .modal--image {
   background: cadetblue;
   background-size: cover;
   background-position: center;
-  width: 40%;
-}
+  width: 40%; }
 
-.modal--content{
+.webp .modal--content {
   background: white;
   width: 60%;
-  padding: 24px;
-}
+  padding: 24px; }
 
-@media only screen and (max-width: 500px){
-  .custom-modal{
-    flex-direction: column;
-  }
-
-  .modal--image{
+@media only screen and (max-width: 500px) {
+  .webp .custom-modal {
+    flex-direction: column; }
+  .webp .modal--image {
     background-size: 1.6;
     width: 100%;
-    height: 200px;
-  }
-  
-  .modal--content{
+    height: 200px; }
+  .webp .modal--content {
     width: 100%;
     padding: 24px;
-    padding-bottom: 0px;
-  }
-}
+    padding-bottom: 0px; } }
+
+.screen {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  z-index: 120;
+  position: fixed;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease; }
+
+.custom-modal {
+  background: white;
+  box-shadow: 0px 0px 40px -8px rgba(48, 50, 59, 0.3);
+  max-width: 640px;
+  display: flex; }
+
+.modal--image {
+  background: cadetblue;
+  background-size: cover;
+  background-position: center;
+  width: 40%; }
+
+.modal--content {
+  background: white;
+  width: 60%;
+  padding: 24px; }
+
+@media only screen and (max-width: 500px) {
+  .custom-modal {
+    flex-direction: column; }
+  .modal--image {
+    background-size: 1.6;
+    width: 100%;
+    height: 200px; }
+  .modal--content {
+    width: 100%;
+    padding: 24px;
+    padding-bottom: 0px; } }
+
+/*# sourceMappingURL=modal.css.map */

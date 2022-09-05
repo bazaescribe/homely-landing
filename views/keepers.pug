@@ -11,6 +11,28 @@ html
     link(rel='stylesheet', href='stylesheets/cochinero.css')
     link(rel='shortcut icon', href='images/icons/favicon.png')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
+    <!-- start Mixpanel -->
+    script(type="text/javascript").
+      (function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+      0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+      for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+      MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+      mixpanel.init("6584ec42bec2bf5559f816d1fc3cae4b");
+      mixpanel.track("Open keepers");
+    <!-- end Mixpanel -->
+    script.
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '145648802609752');
+      fbq('track', 'ViewContent', {
+        content_ids: 'keepers',
+      });
 
   body
     include includes/navbar
@@ -25,64 +47,46 @@ html
               p   Tú eliges tus zonas, días y horarios de trabajo.
             a(href="https://goo.gl/forms/8LaKi9t7Lj3BAMGI3")
               button.btn.btn-alt-hv Regístrate
-            span(style="padding: 16px; font-size: 18px;")
+            span(style="padding: 4px; font-size: 18px;")
               b ó llámanos 📞  
-                a(href="tel:70982559") 7098-2559
-
-    .bg-blue
-      .container.section
-        .row
-          .col-md-4
-            .perk
-              .image
-                img(src="images/icons/healt.png", style="width: 30%;", alt="")
-              .content
-                h4 Seguro de gastos médicos
-                p  Todos los keepers cuentan con un seguro de gastos médicos para cubrirte en todo momento durante tus servicios.
-          .col-md-4
-            .perk
-              .image
-                img(src="images/icons/time.png", style="width: 30%;", alt="")
-              .content
-                h4 Pago justo por hora
-                p  Todos los servicios se pagan por hora, nunca tendrás que preocuparte por jefes abusivos.
-          .col-md-4
-            .perk
-              .image
-                img(src="images/icons/money.png", style="width: 30%;", alt="")
-              .content
-                h4 Tu dinero cada semana
-                p  Trabaja con la certeza de que siempre recibiras tu dinero de manera segura en tu cuenta bancaria.
-          
-    .section.bg-cream(style="background-image: url('images/bgs/pattern-1.png'); background-size: cover;")
-      .container
-        .row.d-flex.align-items-center
-          .col-md-8
-            h2 
-              | Gana hasta $
-              span#income 11,840
-              |  mensuales
-            h6 Puedes lograr estos ingresos trabajando... 
-            br
-            select(name="hours", onchange="calculate()")#hours
-              option(value=3) 3 horas diarias
-              option(value=4) 4 horas diarias
-              option(value=5) 5 horas diarias
-              option(value=6) 6 horas diarias
-              option(value=7) 7 horas diarias
-              option(value=8, selected) 8 horas diarias
-            img(src="images/icons/multiplication.png", alt="", style="margin: 12px;")
-            select(name="days", onchange="calculate()")#days
-              option(value=1) 1 día a la semana
-              option(value=2) 2 días a la semana
-              option(value=3) 3 días a la semana
-              option(value=4) 4 días a la semana
-              option(value=5, selected) 5 días a la semana
-              option(value=6) 6 días a la semana
-              option(value=7) 7 días a la semana
-          .col-md-4
-            img(src="images/photos/keeper-hi.png", alt="Keeper saludando", style="width: 100%")
+                a(href="tel:88684897") 8868-4897
   
+    .section.bg-grape
+          .container.p-0
+            .col-md-7.p-0.mt-3            
+              h3.text-light.keeper-title Encuentra un esquema de trabajo que se adapte a tus necesidades            
+            .container.p-0
+            .keeper-container      
+              .content
+                .perk.pt-0.keeper-container-info
+
+                  .col-md-12.p-0                  
+                            
+                    h4.keeper-schema Jornada Completa
+                    p.keeper-hours 8 horas al día
+                    ul.keeper-advantage-list                   
+                      li Sueldo mensual base de $5,220
+                      li Pagos semanales ($1,305)
+                      li Prestaciones de Ley
+                      li Bono mensual por Puntualidad $300
+                      li Bono mensual por Calidad $300
+                      li Rifas a los cumpleañeros del mes
+
+                  .col-md-12.p-0
+                       
+                    h4.keeper-schema Medio tiempo
+                    p.keeper-hours 4 horas al día
+                    ul.keeper-advantage-list 
+                      li Sueldo mensual base de *$3,200*
+                      li Pagos semanales ($800)
+                      li AdscrIpción al IMSS Piloto
+                      li Bono mensual por Puntualidad *$100*
+                      li Bono mensual por Calidad *$100*
+                      li Rifas a los cumpleañeros del mes
+                
+              .col-md-6.p-0.keeper-img
+                img(src="images/photos/keepers/keeper-10.png", alt="Keeper-10")
+
     .container.section
       .row
         .col-md-6
@@ -100,7 +104,7 @@ html
           p  El examen de confianza que desarrollamos en Homely nos ayuda a garantizar seguridad para ti y tus clientes en cada uno de los servicios que prestes en la plataforma.
           a(href="https://goo.gl/forms/8LaKi9t7Lj3BAMGI3")
             button.btn.btn-main Regístrate ahora
-          a(href="tel:70982559")
+          a(href="tel:558868-4897")
             button.btn.btn-alt Llámanos
 
     include includes/footer.pug
@@ -108,4 +112,6 @@ html
     script(src='javascripts/calculator.js')
 
     script(src='javascripts/targeted-keepers.js')
+
+    include includes/intercom.pug
       

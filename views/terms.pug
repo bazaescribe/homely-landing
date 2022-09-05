@@ -22,16 +22,33 @@ html
         .col-md-3.sections-column
           .section-button(onclick="showSection('terms')")
             .image
-              img(src="images/icons/terms.png")
+              picture
+                source(type='image/webp' srcset="images/icons/terms.webp")
+                source(type='image/png' srcset="images/icons/terms.png")
+                img(src="images/icons/terms.png")
             .text Términos y condiciones
           .section-button(onclick="showSection('privacy')") 
             .image
-              img(src="images/icons/VIP.png")
+              picture
+                source(type='image/webp' srcset="images/icons/VIP.webp")
+                source(type='image/png' srcset="images/icons/VIP.png")
+                img(src="images/icons/VIP.png")
             .text Aviso de privacidad
           .section-button(onclick="showSection('rules')") 
             .image
-              img(src="images/icons/rules.png")
+              picture
+                source(type='image/webp' srcset="images/icons/rules.webp")
+                source(type='image/png' srcset="images/icons/rules.png")
+                img(src="images/icons/rules.png")
             .text Reglas de la comunidad
+          .section-button(onclick="showSection('account')") 
+            .image
+              picture
+                // todo cambiar la imagen
+                source(type='image/webp' srcset="https://www.pngkit.com/png/full/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png")
+                source(type='image/png' srcset="https://www.pngkit.com/png/full/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png")
+                img(src="https://www.pngkit.com/png/full/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png")
+            .text Quiero eliminar mi cuenta
         .col-md-9.content-column
           #terms
             p.p1
@@ -59,23 +76,48 @@ html
                   strong 3. Solicitud de servicios a través del sitio o aplicación
             p.p5
               span.s1
-                | Una vez registrado en nuestro sitio o aplicación, podrás solicitar los servicios ofrecidos por los “Keepers”. Los servicios pueden ser solicitados por periodos desde 3 hasta 8 horas bajo tres modalidades diferentes. Una de las modalidades es la de “Homely” agendado, la otra es la de “Homely” exprés y la ultima de “Homely” único.
+                | Una vez registrado en nuestro sitio o aplicación, podrás solicitar los servicios ofrecidos por los “Keepers”. Los servicios pueden ser solicitados por periodos desde 3 hasta 8 horas bajo cuatro modalidades diferentes. Las modalidades existentes son “Homely” suscripción, “Homely” recurrente, “Homely” exprés y “Homely” único.
             p.p5
               span.s1
-                | En la modalidad de “Homely” agendado podrás programar la prestación del servicio para los días y horas designados de manera previa; la solicitud debe hacerse con al menos 24 horas de anticipación. En dicha modalidad el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio. Bajo esta modalidad, se prestará el servicio por un mínimo de tres horas y se pagará la hora de conformidad con el precio establecido en el punto 7 de los presentes términos de uso y condiciones de servicio.
+                | En la modalidad de <strong>“Homely” suscripción</strong> podrás programar  un plan de servicios para los días y horas designados de manera previa; la solicitud debe hacerse con al menos 24 horas de anticipación; los planes de suscripción se renuevan de manera automática el mismo día en que se contrata el plan inicial de cada mes y el usuario podrá cancelarlo cuando lo desee sin costo alguno, los planes de suscripción serán planes prepago.
             p.p5
               span.s1
-                | En la modalidad de “Homely” exprés podrás solicitar la prestación del servicio sin necesidad de programarlo con 24 horas de anticipación. En dicha modalidad, te pedimos por favor, considerar que el “keeper” puede demorar mínimo 2 horas en llegar, dependiendo de la distancia a la que se encuentre del lugar donde solicites el servicio y de las condiciones de tráfico en la Ciudad. El servicio exprés se contratará por cuando menos tres horas y su precio se pagará conforme a lo establecido en el punto 7 de los presentes términos de uso y condiciones del servicio.
+                | En dicha modalidad, el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio.
             p.p5
               span.s1
-                | En la modalidad de “Homely” único podrás programar la prestación del servicio para un día y hora designados de manera previa en una única visita al domicilio; la solicitud debe hacerse con al menos 24 horas de anticipación. En dicha modalidad el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio. Bajo esta modalidad, se prestará el servicio por un mínimo de tres horas y se pagará la hora de conformidad con el precio establecido en el punto 7 de los presentes términos de uso y condiciones de servicio. En todo caso, la prestación de los servicios está sujeta a la disponibilidad y aceptación por parte de los “Keepers”.
+                | En la modalidad de <strong>“Homely” recurrente</strong> podrás programar la prestación del servicio para los días y horas designados de manera previa; la solicitud debe hacerse con al menos 24 horas de anticipación.
+            p.p5
+              span.s1
+                | En dicha modalidad el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio.
+            p.p5
+              span.s1
+                | Bajo esta modalidad, se prestará el servicio por un mínimo de tres horas y se pagará la hora de conformidad con el precio establecido en la solicitud del servicio teniendo como base los precios del punto 7 de los presentes términos de uso y condiciones de servicio.
+            p.p5
+              span.s1
+                | En la modalidad de “Homely” exprés podrás solicitar la prestación del servicio sin necesidad de programarlo con 24 horas de anticipación.
+            p.p5
+              span.s1
+                | En dicha modalidad, te pedimos por favor, considerar que el “keeper” puede demorar mínimo 2 horas en llegar, dependiendo de la distancia a la que se encuentre del lugar donde solicites el servicio y de las condiciones de tráfico en la Ciudad. El servicio exprés se contratará por cuando menos tres horas y su precio se pagará conforme a lo establecido en el punto 7 de los presentes términos de uso y condiciones del servicio.
+            p.p5
+              span.s1
+                | En la modalidad de <strong>“Homely” único</strong> podrás programar la prestación del servicio para un día y hora designados de manera previa en una única visita al domicilio; la solicitud debe hacerse con al menos 24 horas de anticipación.
+            p.p5
+              span.s1
+                | En dicha modalidad el “keeper” llegará al domicilio indicado en la fecha y hora acordadas. Al solicitar el servicio bajo esta modalidad, estás de acuerdo en otorgar hasta 30 minutos de tolerancia a partir de la hora programada, para la llegada del “keeper” por motivos de tráfico o demoras en el sistema de transporte colectivo sin que ello sea motivo para la cancelación del servicio.
+            p.p5
+              span.s1
+                | Bajo esta modalidad, se prestará el servicio por un mínimo de tres horas y se pagará la hora de conformidad con el precio establecido en el punto 7 de los presentes términos de uso y condiciones de servicio. 
+            p.p5
+              span.s1
+                strong
+                 | En todos los casos, la prestación de los servicios está sujeta a la disponibilidad y aceptación por parte de los “Keepers”.
                 br
                 br
                 span.s1
                   strong 4. Servicios ofrecidos por los keepers
                
                   li.li3
-                    span.s1 Servicio básico:
+                    span.s1 Servicio básico (duración mínima de 3 horas) par las diferentes modalidades:
                   ol.ol2
                     li.li3
                       span.s1 Limpieza de hasta dos recamaras.
@@ -90,18 +132,7 @@ html
                   ol.ol2
                     li.li3
                       span.s1
-                        | El servicio a la medida comprenderá́ el servicio básico más las opciones que solicites adicionales. En función de las opciones adicionales que añadas, se incrementará el costo del servicio conforme a lo establecido en el punto 7 de los presentes términos de uso y condiciones del servicio.
-                  li.li3
-                    span.s1 Servicio exprés:
-                  ol.ol2
-                    li.li3
-                      span.s1 Limpieza de hasta dos recamaras.
-                    li.li3
-                      span.s1 Limpieza de hasta dos baños.
-                    li.li3
-                      span.s1 Limpieza de sala-comedor.
-                    li.li3
-                      span.s1 Limpieza de cocina (no incluye limpieza de horno ni refrigerador).
+                        | El servicio a la medida comprenderá el servicio básico más las opciones que solicites adicionales. En función de las opciones adicionales que añadas, se incrementará el costo del servicio conforme a lo establecido en el punto 7 de los presentes términos de uso y condiciones del servicio.
                 br
                 span.s1
                   strong 5. Limitación de responsabilidad  
@@ -111,13 +142,10 @@ html
                 | “Homely” sirve únicamente como medio de contacto y gestor de pagos entre tú y el “Keeper”. “Homely” no presta ni ofrece otros servicios que no sean los de publicidad para los “Keepers” y los servicios de contacto y gestión de pagos para ti en relación con el “keeper”.
             p.p5
               span.s1
-                | En consecuencia, “Homely” no será́ responsable de ningún problema que pueda surgir entre el “keeper” y tú, así́ como tampoco será́ responsable de ningún daño o perjuicio que puedan ocasionarse las partes. Al término de la prestación del servicio por parte del “Homely”, podrás evaluar la calidad del mismo y el “keeper” podrá́ evaluarte también.
+                | En consecuencia, “Homely” no será́ responsable de ningún problema que pueda surgir entre el “keeper” y tú, así como tampoco será responsable de ningún daño o perjuicio que puedan ocasionarse las partes. Al término de la prestación del servicio por parte del “keeper”, podrás evaluar la calidad del mismo y el “keeper” podrá́ evaluarte también.
             p.p5
               span.s1
-                | Al término de la prestación del servicio por parte del “keeper”, podrás evaluar la calidad del mismo y el “keeper” podrá evaluarte también.
-            p.p5
-              span.s1
-                | “Homely” para beneficio de los usuarios cuenta con un seguro de responsabilidad civil con cobertura a daños a terceros, el cual tiene una cobertura de hasta $1,000,000 MXN en caso de daños o accidentes ocasionados por las labores que el keeper realiza en el domicilio a objetos o al domicilio del usuario. Las limitantes y exclusiones a la cobertura del mismo son las siguientes:
+                | “Homely” para beneficio de los usuarios cuenta con un seguro de responsabilidad civil con cobertura a daños a terceros, el cual tiene una cobertura de hasta $3,000,000 MXN en caso de daños o accidentes ocasionados por las labores que el keeper realiza en el domicilio a objetos o al domicilio del usuario. Las limitantes y exclusiones a la cobertura del mismo son las siguientes:
              
               ol.ol2
                 li.li3
@@ -166,23 +194,64 @@ html
                 strong 7. Precio y pago de los servicios  
             p.p5
               span.s1 Los precios por los servicios ofrecidos por los “Keepers” son los siguientes:
-             
-               
+
                 li.li3
-                  span.s1 Servicio básico agendado: $80 pesos I.V.A. incluido por hora.
+                  span.s1 <strong>Plan mensual suscripción base</strong>: $99 pesos I.V.A. incluido por hora.
                 li.li3
-                  span.s1 Servicio básico exprés: $115 pesos I.V.A. incluido por hora.
+                  span.s1 <strong>Servicio básico agendado</strong>: $109 pesos I.V.A. incluido por hora.
                 li.li3
-                  span.s1 Servicio básico único: $90 pesos I.V.A. incluido por hora.
+                  span.s1 <strong>Servicio básico exprés</strong>: $144 pesos I.V.A. incluido por hora.
+                li.li3
+                  span.s1 <strong>Servicio básico único</strong>: $114 pesos I.V.A. incluido por hora.
                 li.li3
                   span.s1
-                    | Servicio a la medida: según se agregue tiempo adicional al servicio, se cobrará la fracción de tiempo con el costo por hora según el tipo de servicio que se solicite.
+                    | <strong>Servicio a la medida</strong>: según se agregue tiempo adicional al servicio, se cobrará la fracción de tiempo con el costo por hora según el tipo de servicio que se solicite.
+                li.li3
+                  span.s1
+                    | <strong>Homely Credits</strong>: El usuario podrá comprar crédito para sus servicios futuros con el beneficio de un monto extra; dicho crédito podrá ser utilizado exclusivamente para el pago de servicios de tipo único y exprés. Los planes de crédito tienen los siguientes precios y beneficios:
+                    ul
+                      li $330 MXN I.V.A. incluido- recibe $352 MXN
+                      li $660 MXN I.V.A. incluido- recibe $704 MXN
+                      li $990 MXN I.V.A. incluido- recibe $1,056 MXN
+                      li $1,320 MXN I.V.A. incluido- recibe $1,548 MXN
+                      li $2,640 MXN I.V.A. incluido- recibe $3,096 MXN
+                      li $3,960 MXN I.V.A. incluido- recibe $4,644 MXN
+                      li $5,280 MXN I.V.A. incluido- recibe $6,192 MXN
+                  p 
+                    |<strong>ESTE CRÉDITO NO PODRÁ SER UTILIZADO PARA LA RESERVA DE SERVICIOS RECURRENTES O PLANES DE SUSCRIPCIÓN Y TENDRÁ VIGENCIA DE UN AÑO EN LA CUENTA DEL USUARIO.</strong>
+                  p Los servicios reservados con Homely Credits se apegarán a las reglas de cancelación y modificación descritas en este documento.
+                li.li3
+                  span.s1
+                    | <strong>Tarifa adicional de transporte</strong>: se realizará un cargo mínimo de $50 MXN I.V.A. incluido como apoyo a transporte público de los keepers en servicios solicitados en zonas de difícil acceso en las diferentes ciudades donde Homely cuente con cobertura. Este cargo será reflejado en el desglose del monto al momento de que el usuario solicite sus servicios y aplicará para los siguientes servicios enlazados en el domicilio.
+                li.li3
+                  span.s1
+                    | <strong>Cuota adicional de seguridad social: </strong>: se realizará un cargo mínimo de $50 MXN I.V.A. incluido, correspondiente a la cuota de contribución por el servicio contratado por el usuario a la seguridad social del keeper que le brinde sus servicios. El IMSS ha creado un régimen especial a efecto de garantizar el acceso a la seguridad social a las personas trabajadoras del hogar, a fin de que sean afiliadas en igualdad de condiciones que el resto de las y los trabajadores. Este cargo será reflejado en el desglose del monto al momento de que el usuario solicite sus servicios y aplicará para los siguientes servicios enlazados en el domicilio.
+                    br
+                    span.s1 Este monto será destinado en su totalidad para el pago de la cuota de contribución del usuario contratante del servicio.
+                li.li3
+                  span.s1
+                    | <strong>Servicio a la medida: </strong>: según se agregue tiempo adicional al servicio, se cobrará la fracción de tiempo con el costo por hora según el tipo de servicio que se solicite.
             p.p5
               span.s1
-                | El pago de los servicios que contrates a través de “Homely” se hará́ con cargo a la tarjeta de crédito o débito que ligues a tu cuenta de usuario. Los pagos serán gestionados por “Homely” pero procesados por Stripe Payment México, S. de R.L. de C.V. (“Stripe”). por lo que “Homely” no tendrá́ acceso a tu información financiera en ningún momento.
+                | En el caso de los planes mensuales, el precio por hora puede modificarse según el número de servicios que el usuario desee incluir en su plan. Las suscripciones son planes que se renovarán de manera automática y el cargo por los servicios se realizarán previo a que el plan inicie; las renovaciones se cobrarán el mismo día en el que se haya contratado el plan inicial de cada mes.
             p.p5
               span.s1
-                | Para verificar la validez y vigencia de tu tarjeta de crédito, Stripe Payment México, S. de R.L. de C.V. (“Stripe”) realizará un cargo a la misma por $1.00 (Un peso 00/100, m.n.). El importe de dicho cargo será́ reintegrado una vez que se haya comprobado la validez y vigencia de tu tarjeta de crédito.
+                | Los servicios del tipo recurrente, único y exprés serán cargados posteriormente a que los servicios hayan finalizado.
+            p.p5
+              span.s1
+                | El pago de los servicios que contrates a través de “Homely” se hará con cargo a la tarjeta de crédito o débito que ligues a tu cuenta de usuario. Los pagos serán gestionados por “Homely” pero procesados por Stripe Payment México, S. de R.L. de C.V. (“Stripe”). por lo que “Homely” no tendrá acceso a tu información financiera en ningún momento.
+            p.p5
+              span.s1
+                | Para verificar la validez y vigencia de tu tarjeta de crédito, Stripe Payment México, S. de R.L. de C.V. (“Stripe”) realizará un cargo a la misma por $1.00 (Un peso 00/100, m.n.); el importe de dicho cargo será́ reintegrado una vez que se haya comprobado la validez y vigencia de tu tarjeta de crédito.
+            p.p5
+              span.s1
+                | Asimismo, cuando se solicite un servicio de tipo recurrente, único o exprés se realizará una preautorización por el monto total del servicio solicitado; este monto será autorizado y cargado una vez que el servicio sea brindado y finalizado por parte de la keeper. En caso de que el servicio no sea realizado por falta de asignación de keeper o por cancelación derivado de un retraso mayor a 30 min del keeper, se liberará automáticamente el monto total preautorizado; dependerá completamente de Stripe y el banco emisor de la tarjeta el tiempo en el que la liberación de las preautorización sea reflejado.
+            p.p5
+              span.s1
+                | En los servicios de tipo recurrente se realizará la preautorización del siguiente servicio con una semana de anticipación para garantizar que el usuario cuente con los fondos suficientes; en caso de que la preautorización falle se le notificará al usuario; si no se lograse realizar la preautorizacion del servicio y no se tenga respuesta del usuario, los servicios serán pausados.
+            p.p5
+              span.s1
+                | En el caso de las suscripciones; al ser planes prepago, se hará el cargo por el total de la suscripción en cuanto se solicite y se reanudará de manera automática cada mes hasta que el usuario cancele la suscripción. En caso de que el cargo de la suscripción falle, se le notificará al usuario; si no se lograse realizar el cargo del monto de la suscripción y no se tenga respuesta del usuario, el plan será suspendido hasta el pago integro del plan.
 
               br
               br
@@ -194,25 +263,41 @@ html
                 | Los diferentes tipos de servicio solicitados a través de la plataforma tienen una política de cancelación y modificación:
              
                
-                li.li3
+                p.p5
                   span.s1
-                    | Servicios agendados: Si el servicio se cancela o modifica con 24 horas o más de anticipación no se realizará cargo alguno sobre el mismo. En caso de que se realice con hasta 2 horas de anticipación se hará un cargo por $80MXN, correspondientes a una hora de servicio; finalmente, si el servicio se cancela con menos de 2 horas de anticipación el cargo por cancelación será de $106MXN como compensación para el keeper que haya sido asignado al servicio. En el caso de los servicios agendados se solicita que al menos 4 servicios sean llevados a cabo en el domicilio del usuario previo a cancelar la serie de servicios; en caso contrario se hará un cargo de $100MXN al usuario.
-                li.li3
+                    | <strong>Planes de suscripción</strong>: El usuario tiene absoluta libertad para cancelar o modifi car sus servicios con más de 24 horas de anticipación sin que dicho servicio sea descontado de su plan o marcado como realizado. En caso de que se realice con hasta 2 horas de anticipación el servicio será marcado como realizado y se descontará del plan de servicio correspondiente; se realizará el pago parcial de este servicio al Keeper como compensación para la persona haya sido asignado al servicio.
+                p.p5
                   span.s1
-                    | Servicios únicos: Si el servicio se cancela o modifica con 24 horas o más de anticipación no se realizará cargo alguno sobre el mismo. En caso de que se realice con hasta 2 horas de anticipación se hará un cargo por $90MXN, correspondientes a una hora de servicio; finalmente, si el servicio se cancela con menos de 2 horas de anticipación el cargo por cancelación será de $106MXN como compensación para el keeper que haya sido asignado al servicio.
-                li.li3
+                    | En los planes de suscripción el usuario tiene plena libertad para enviar los servicios a diferentes domicilios; siempre y cuando la modificación sea realizada con más de 24 horas de anticipación; los planes de suscripción podrán ser cancelados sin cargo alguno por el usuario, siempre y cuando la cancelación sea realizada previo al siguiente cargo. 
+                p.p5
                   span.s1
-                    | Servicios exprés: Como estos servicios son solicitados con al menos 2 horas de anticipación, únicamente se hará un cargo en caso de que la cancelación o modificación del servicio se haga con 1 hora de anticipación o menos; de ser así se hará un cargo de $115MXN correspondientes al costo de una hora del servicio, mismos que se darán como compensación al keeper asignado al servicio.
+                    | En caso de que el cargo automático haya sido procesado; la cancelación será efectiva para el siguiente mes y el usuario podrá hacer uso de sus servicios ya cargados durante el mes en curso.
+
+                p.p5
+                  span.s1
+                    | <strong>Servicios recurrentes</strong>:  Si el servicio se cancela o modifi ca con 24 horas o más de anticipación no se realizará cargo alguno sobre el mismo y se liberará la preautorización correspondiente. En caso de que se realice con hasta 2 horas de anticipación se hará un cargo por $106 MXN; fi nalmente, si el servicio se cancela una vez que el “keeper” ya se encuentra en el domicilio del usuario; se hará el cargo por el servicio completo como compensación para el “keeper” que haya sido asignado al servicio.
+                p.p5
+                  span.s1
+                    | En el caso de los servicios recurrentes, es necesario que al menos 4 servicios sean llevados a cabo en el domicilio del usuario previo a cancelar la serie de servicios; caso contrario se hará un cargo de $100 MXN al usuario adicional a cualquier otro cargo de cancelación sin anticipación correspondiente.
+                p.p5
+                  span.s1
+                    | <strong>Servicios únicos</strong>: Si el servicio se cancela o modifi ca con 24 horas o más de anticipación no se realizará cargo alguno sobre el mismo. En caso de que se realice con hasta 2 horas de anticipación se hará un cargo por $106MXN, correspondientes a una hora de servicio; fi nalmente, si el servicio se cancela el servicio una vez que el “keeper” ya se encuentra en el domicilio del usuario; se hará el cargo por el servicio completo como compensación para el “keeper” que haya sido asignado al servicio y haya acudido.
+                p.p5
+                  span.s1
+                    | <strong>Servicios exprés</strong>: Como estos servicios son solicitados con al menos 2 horas de anticipación, únicamente se hará un cargo en caso de que la cancelación o modifi cación del servicio se haga una vez que el “keeper” se encuentre en el domicilio; de ser así, se hará el cargo por el servicio completo como compensación para el “keeper” que haya sido asignado al servicio y haya acudido.
               
               br
               span.s1
                 strong 9. Privacidad y datos personales
             p.p5
               span.s1
-                | Tus datos personales están seguros con “Homely”. Para mayor información sobre los datos que recabamos, la finalidad del tratamiento y el ejercicio de tus derechos ARCO, por favor consulta nuestro aviso de privacidad en https://www.homely.mx/terms?info=privacy
+                | Tus datos personales están seguros con “Homely”. Para mayor información sobre los datos que recabamos, la finalidad del tratamiento y el ejercicio de tus derechos ARCO, por favor consulta nuestro aviso de privacidad 
+                a(href="https://www.homely.mx/terms?info=privacy" target="_blank") aquí.
             p.p5
               span.s1
-                | Los datos personales que proporciones para la realización del pago de los servicios del “keeper” son recabados y tratados por Stripe Payment México, S. de R.L. de C.V. (“Stripe”) y su tratamiento se encuentra regulado por el aviso de privacidad de Stripe Payment México, S. de R.L. de C.V. (“Stripe”) ubicado en el sitio https://stripe.com/mx/privacy
+                | Los datos personales que proporciones para la realización del pago de los servicios del “keeper” son recabados y tratados por Stripe Payment México, S. de R.L. de C.V. (“Stripe”) y su tratamiento se encuentra regulado por el aviso de privacidad de Stripe Payment México, S. de R.L. de C.V. (“Stripe”) ubicado en el sitio de 
+                a(href="https://stripe.com/mx/privacy" target="_blank") Stripe.
+                
 
               br
               br
@@ -237,7 +322,9 @@ html
                 strong 12. Facturación
             p.p5
               span.s1
-                | “Homely” expedirá́ la factura por el total del cargo realizado del servicio que solicites a través de nuestro sitio o aplicación siempre que nos proporciones tus datos fiscales y tu correo electrónico. Por favor envíanos tus datos a contacto@homely.mx
+                | “Homely” expedirá́ la factura por el total del cargo realizado del servicio que solicites a través de nuestro sitio o aplicación siempre que nos proporciones tus datos fiscales y tu correo electrónico. La emisión de la factura será llevada a cabo por GX Technology S.A.P.I. de C.V. (“Chain”); el tratamiento de dichos datos se encuentra regulado por el aviso de privacidad de GX Technology S.A.P.I. de C.V. (“Chain”) ubicado en el siguiente sitio.
+                br
+                span.s1 En caso de que no recibas la factura de forma correcta, por favor envíanos tus datos a contacto@homely.mx
              
               br
               br
@@ -277,7 +364,7 @@ html
                 strong 3. De tus derechos ARCO (acceso, rectificación, cancelación y oposición) y cómo ejercerlos
             p.p3
               span.s1
-                | En todo momento, mediante el acceso a tu cuenta, podrás acceder, rectificar o cancelar el registro de los datos que nos has proporcionado. De la misma forma, podrás oponerte a que tus datos continúen en nuestra base y darte de baja de la misma. Si tienes alguna duda o no puedes acceder a tu cuenta o tus datos, por favor envía un correo electrónico a privacidad@homely.mx o envía una carta a Grupo MIRCAVI S.A. de C.V., Calle Aragón 199, Col. Álamos, C.P. 03400, Ciudad de México, en atención al Departamento de Atención a Usuarios o comunícate por teléfono a nuestras oficinas al número 7098 2559 y pide que te comuniquen a nuestro Departamento de Atención a Usuarios.
+                | En todo momento, mediante el acceso a tu cuenta, podrás acceder, rectificar o cancelar el registro de los datos que nos has proporcionado. De la misma forma, podrás oponerte a que tus datos continúen en nuestra base y darte de baja de la misma. Si tienes alguna duda o no puedes acceder a tu cuenta o tus datos, por favor envía un correo electrónico a privacidad@homely.mx o envía una carta a Grupo MIRCAVI S.A. de C.V., Calle Aragón 199, Col. Álamos, C.P. 03400, Ciudad de México, en atención al Departamento de Atención a Usuarios o comunícate por teléfono a nuestras oficinas al número 8868-4897 o al 7098-2559 y pide que te comuniquen a nuestro Departamento de Atención a Usuarios.
              
               br
               br
@@ -439,10 +526,27 @@ html
             h3 Reglas de la comunidad
             br
             ol
+              li El respeto y el disfrute son la base de Homely, queremos que tanto usuarios como keepers desarrollen una convivencia basada en estas máximas.
               li Los keepers prestan servicios de limpieza general para casa y oficinas, procura que el lugar en el que se lleven a cabo estos servicios no implique un riesgo para su integridad.
-              li Para facilitar el traslado, los Keepers no llevan productos de limpieza; por lo que te sugerimos tengas listo lo necesario antes de que la persona responsable llegue a tu domicilio y no se genere ningún retraso en tu servicio.
-              li El tiempo de tu servicio comienza a correr cuando el keeper llegue a tu domicilio. 
-              li Los keepers no reciben llaves de los domicilios donde prestan servicios,  es importante que alguien pueda recibirlo y  despedirlo. 
-              li Si tienes dudas o deseas modificiar o agregar tiempo extra a tu servicio por favor escribirnos a contacto@jelpmi.mx o llámanos al 7098 2559.
+              li Para facilitar el traslado, los Keepers no llevan productos de limpieza; por lo que te sugerimos tengas listo lo necesario antes de que la persona responsable llegue a tu domicilio y no se genere ningún retraso en tu servicio. En caso de que requieras insumos de limpieza, podrás solicitarlos con un cargo extra al equipo de Homely.
+              li El tiempo de tu servicio comienza a correr cuando el keeper llegue a tu domicilio.
+              li Los keepers no reciben llaves de los domicilios donde prestan servicios, es importante que alguien pueda recibirlo y despedirlo.
+              li Si tienes dudas o deseas modificiar o agregar tiempo extra a tu servicio por favor escribirnos a hola@homely.mx o llámanos al 8868-4897 o al 7098-2559.
+          #account 
+            h3 Quiero eliminar mis datos sensibles de Homely
+            br
+            p En Homely nos preocupamos del tratamiento de tu información personal, la cual está protegida dentro de nuestras bases de datos. Sin embargo, si deseas eliminar definitivamente toda tu información sensible basta con seguir los siguientes pasos:
+            ol
+              li No tener adeudos.
+              li No tener servicios proximos.
+              li Envia un correo a hola@homely con el asunto: <strong>Deseo eliminar mi cuenta de Homely</strong>. 
+              p El cual debe contener:
+              ul
+                li Nombre completo
+                li Email asociado a tu cuenta Homely
+                li Razón/Motivo  por la que la deseas borrar la cuenta
+              li En un lapso de 48 a 72 horas recibirás un correo de confirmación de eliminación de cuenta con los datos sensibles eliminados
 
+          h4 Bienvenido a Homely ¡Ponte cómodo y disfruta!
     include includes/footer.pug
+    include includes/intercom.pug

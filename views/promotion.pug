@@ -1,0 +1,130 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Homely - Pásale a lo barrido
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel='stylesheet', href='stylesheets/cochinero.css')
+    link(rel='shortcut icon', href='images/icons/favicon.png')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
+
+    script(src='javascripts/terms.js')
+
+  body(onload="getURL()")
+    include includes/navbar
+
+    .hero-section.d-flex.align-items-center(style="background-image: url('images/photos/terms-hero.jpg')")
+      h1 Promociones 2021
+
+    .container
+      .row
+        .col-md-3.sections-column
+          .section-button(onclick="showSection('terms')")
+            .image
+              picture
+                source(type='image/webp' srcset="images/icons/terms.webp")
+                source(type='image/png' srcset="images/icons/terms.png")
+                img(src="images/icons/terms.png")
+            .text Términos y condiciones
+        .col-md-9.content-column
+          #terms
+            p.p1
+              span.s1
+                h3 Términos y Condiciones - Promociones 2021
+            h5.mt-5 Descuento del $120MXN de descuento en tu servicio. 
+            h6 Válido en zonas de cobertura dentro de Ciudad de México, Guadalajara y Monterrey
+            ol.mt-4
+              li Para hacer válido la promoción el servicio debe cumplir con los términos y condiciones de esta.
+              li Al ingresar el código HOLAHOMELY al agendar nuestro servicio recibirán un descuento es de $120 MXN el costo final de su servicio.
+              li Sólo será válido un cupón por usuario nuevo.
+              li El descuento es válido para los servicios de nuestra plataforma.
+              li Se aplicará sólo una promoción por usuario.
+              li Los descuentos y los códigos promocionales no son acumulables.
+              li El servicio se tiene que solicitar al menos con 24 horas de anticipación.
+              li HOMELY se reserva el derecho de modificar las fechas y/o términos de la promoción en cualquier momento sin previo aviso.
+              li Válido hasta el 31 de Enero 2021
+
+            h5.mt-5 Descuento del $130MXN de descuento en tu primer servicio.
+            h6 Válido en zonas de cobertura dentro de Ciudad de México, Guadalajara y Monterrey
+            ol.mt-4
+              li Para hacer válido la promoción el servicio debe cumplir con los términos y condiciones de esta.
+              li Al ingresar el código AYUDAHOMELY al agendar nuestro servicio recibirán un descuento es de $130 MXN el costo final de su servicio.
+              li Sólo será válido un cupón por usuario nuevo.
+              li El descuento es válido para los servicios de nuestra plataforma.
+              li Se aplicará sólo una promoción por usuario.
+              li Los descuentos y los códigos promocionales no son acumulables.
+              li Válido hasta el 31 de Enero 2021
+
+            h5.mt-5 30%  de descuento en tu primera suscripción con nosotros.
+            h6 Válido en zonas de cobertura dentro de Monterrey
+            ol.mt-4
+              li Para hacer válido la promoción el servicio debe cumplir con los términos y condiciones de esta.
+              li Al ingresar el código ENMTY30 al agendar nuestro servicio recibirán un descuento de 30%  el costo final de su suscripción.
+              li Sólo será válido un cupón por usuario.
+              li El descuento es válido para los servicios de nuestra plataforma.
+              li Se aplicará sólo una promoción por usuario.
+              li Los descuentos y los códigos promocionales no son acumulables.
+              li El servicio se tiene que solicitar al menos con 24 horas de anticipación.
+              li HOMELY se reserva el derecho de modificar las fechas y/o términos de la promoción en cualquier momento sin previo aviso.
+              li Válido hasta el 31 de Marzo 2021
+
+            
+            h5.mt-5 30%  de descuento en tu primera suscripción con nosotros.
+            h6 Válido en zonas de cobertura dentro de Guadalajara
+            ol.mt-4
+              li Para hacer válido la promoción el servicio debe cumplir con los términos y condiciones de esta.
+              li Al ingresar el código ENGDL30 al agendar nuestro servicio recibirán un descuento de 30%  el costo final de su suscripción.
+              li Sólo será válido un cupón por usuario.
+              li El descuento es válido para los servicios de nuestra plataforma.
+              li Se aplicará sólo una promoción por usuario.
+              li Los descuentos y los códigos promocionales no son acumulables.
+              li El servicio se tiene que solicitar al menos con 24 horas de anticipación.
+              li HOMELY se reserva el derecho de modificar las fechas y/o términos de la promoción en cualquier momento sin previo aviso.
+              li Válido hasta el 31 de Marzo 2021.
+
+
+            h5.mt-5 20% de descuento en servicios únicos y exprés
+            h6 Válido en zonas de cobertura dentro de Guadalajara y Monterrey.
+            ol.mt-4
+              li Para hacer válido la promoción el servicio debe cumplir con los términos y condiciones de esta.
+              li Al ingresar el código HORAFELIZ al agendar nuestro servicio recibirán un descuento de 20%  el costo final de su SERVICIO ÚNICOS Y EXPRÉS.
+              li Sólo será válido un cupón por usuario.
+              li El descuento es válido para los servicios de nuestra plataforma.
+              li Se aplicará sólo una promoción por usuario.
+              li Los descuentos y los códigos promocionales no son acumulables.
+              li El servicio se tiene que solicitar al menos con 24 horas de anticipación.
+              li HOMELY se reserva el derecho de modificar las fechas y/o términos de la promoción en cualquier momento sin previo aviso.
+              li Válido hasta el 28 de Febrero 2021
+
+            h5.mt-5 20% de descuento en recurrentes y suscripciones
+            h6 Válido en zonas de cobertura dentro de CDMX, Guadalajara y Monterrey.
+            ol.mt-4
+              li Para hacer válido la promoción el servicio debe cumplir con los términos y condiciones de esta.
+              li Al ingresar el código LUISAFERSS al agendar nuestro servicio recibirán un descuento de 20%  el costo final de su SERVICIO RECURRENTES Y SUSCRIPCIONES.
+              li Sólo será válido un cupón por usuario.
+              li El descuento es válido para los servicios de nuestra plataforma.
+              li Se aplicará sólo una promoción por usuario.
+              li Los descuentos y los códigos promocionales no son acumulables.
+              li El servicio se tiene que solicitar al menos con 24 horas de anticipación.
+              li HOMELY se reserva el derecho de modificar las fechas y/o términos de la promoción en cualquier momento sin previo aviso.
+              li Válido hasta el 31 de Marzo 2021
+
+
+            h5.mt-5 Descuento del $120MXN de descuento en tu servicio.
+            h6 Válido en zonas de cobertura dentro de CDMX, Guadalajara y Monterrey.
+            ol.mt-4
+              li Para hacer válido la promoción el servicio debe cumplir con los términos y condiciones de esta.
+              li Al ingresar el código AMORCONH al agendar nuestro servicio recibirán un descuento de $120MXN el costo final de cualquier servicio de limpieza.
+              li Sólo será válido un cupón por usuario.
+              li El descuento es válido para los servicios de nuestra plataforma.
+              li Se aplicará sólo una promoción por usuario.
+              li Los descuentos y los códigos promocionales no son acumulables.
+              li El servicio se tiene que solicitar al menos con 24 horas de anticipación.
+              li HOMELY se reserva el derecho de modificar las fechas y/o términos de la promoción en cualquier momento sin previo aviso.
+              li Válido hasta el 1 de Marzo 2021
+
+                                      
+
+    include includes/footer.pug
+    include includes/intercom.pug

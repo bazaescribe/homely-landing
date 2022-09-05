@@ -13,6 +13,32 @@ html(lang='en', dir='ltr')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
     script(src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDQSkVVrZ1BMsG10-44vN0aXJQerFQZkAw', type='text/javascript')
     script(src='javascripts/landing-modal.js')
+    <!-- start Mixpanel -->
+    script(type="text/javascript").
+      (function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+      0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+      for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+      MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+      mixpanel.init("6584ec42bec2bf5559f816d1fc3cae4b");
+      mixpanel.track("Open landing");
+    <!-- end Mixpanel -->
+    <!-- Facebook Pixel Code -->
+    script.
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '145648802609752');
+      fbq('track', 'PageView');
+
+    noscript
+      img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=145648802609752&ev=PageView&noscript=1")
+    <!-- End Facebook Pixel Code -->
+
 
     // Global site tag (gtag.js) - Google Analytics
     script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-76627910-4')
@@ -26,6 +52,8 @@ html(lang='en', dir='ltr')
     script(type='text/javascript').
       _atrk_opts = { atrk_acct:"Jhx0p1IWhd10Y8", domain:"homely.mx",dynamic: true};
       (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    script(type='text/javascript').
+      !function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s);}(document);
     noscript
       img(src='https://certify.alexametrics.com/atrk.gif?account=Jhx0p1IWhd10Y8', style='display:none', height='1', width='1', alt='')
     // End Alexa Certify Javascript
@@ -48,8 +76,12 @@ html(lang='en', dir='ltr')
                 input(type='text', name="neighborhood", placeholder='Escribe tu colonia', onkeyup='initialize()')#searchTextField
                 button(type='submit', name='button')
                   | Buscar
-                  img.icon(src='images/icons/chevron-right.png', alt='')
-          a(href="https://servicios.homely.mx/cotizador/firstStep/clean")
+                  picture
+                    source(type='image/webp' srcset='images/icons/chevron-right.webp')
+                    source(type='image/png' srcset='images/icons/chevron-right.png')
+                    img.icon(src='images/icons/chevron-right.png', alt='')
+                  
+          a(href="https://servicios.homely.mx")
             #search-button
                 | Buscar expertos en limpieza
           .badge
@@ -58,19 +90,40 @@ html(lang='en', dir='ltr')
       .row.section
         .col-md-12.d-flex.justify-content-between.flex-wrap.press-logos
           a.wow.fadeIn(href='https://www.reforma.com/aplicacioneslibre/articulo/default.aspx?id=813843&md5=acf74f2800c08f9fea7a269c95956816&ta=0dfdbac11765226904c16cb9ad1b2efe&lcmd5=1953be67ca081ee3b7c7affe61197d5a', target='_blank', data-wow-delay='0.1s')
-            img(src='images/logos/reforma.png', alt='Periódico Reforma')
+            picture
+              source(type='image/webp' srcset='images/logos/reforma.webp')
+              source(type='image/png' srcset='images/logos/reforma.png')
+              img(src='images/logos/reforma.png', alt='Periódico Reforma')
           a.wow.fadeIn(href='https://youtu.be/MZiQjzn1bOI', target='_blank', data-wow-delay='0.2s')
-            img(src='images/logos/sony.png', alt='Canal Sony Televisión')
+            picture
+              source(type='image/webp' srcset='images/logos/sony.webp')
+              source(type='image/png' srcset='images/logos/sony.png')
+              img(src='images/logos/sony.png', alt='Canal Sony Televisión')
           a.wow.fadeIn(href='https://www.eluniversal.com.mx/articulo/metropoli/df/2016/02/24/limpieza-domestica-al-alcance-de-una-app', target='_blank', data-wow-delay='0.3s')
-            img(src='images/logos/universal.png', alt='Periódico El Universal')
+            picture
+              source(type='image/webp' srcset='images/logos/universal.webp')
+              source(type='image/png' srcset='images/logos/universal.png')
+              img(src='images/logos/universal.png', alt='Periódico El Universal')
           a.wow.fadeIn(href='https://www.milenio.com/negocios/emprender-en-mexico/melina_cruz-jelpmi-negocio-mexico_busca_pasion_emprender-milenio_noticias_0_1050495188.html', target='_blank', data-wow-delay='0.4s')
-            img(src='images/logos/milenio.png', alt='Milenio Diario')
+            picture
+              source(type='image/webp' srcset='images/logos/milenio.webp')
+              source(type='image/png' srcset='images/logos/milenio.png')
+              img(src='images/logos/milenio.png', alt='Milenio Diario')
           a.wow.fadeIn(href='https://medium.com/mujer-del-futuro/jelpmi-la-primera-inversi%C3%B3n-de-ana-victoria-en-shark-tank-5f104b0fad99', target='_blank', data-wow-delay='0.4s')
-            img(src='images/logos/victoria147.png', alt='victoria147')
+            picture
+              source(type='image/webp' srcset='images/logos/victoria147.webp')
+              source(type='image/png' srcset='images/logos/victoria147.png')
+              img(src='images/logos/victoria147.png', alt='victoria147')
           a.wow.fadeIn(href='https://www.imagenradio.com.mx/gabriela-ferriz/conoce-jelpmi-el-nuevo-servicio-de-limpieza', target='_blank', data-wow-delay='0.5s')
-            img(src='images/logos/imagen.png', alt='Grupo Imagen Multimedia')
+            picture
+              source(type='image/webp' srcset='images/logos/imagen.webp')
+              source(type='image/png' srcset='images/logos/imagen.png')
+              img(src='images/logos/imagen.png', alt='Grupo Imagen Multimedia')
           a.wow.fadeIn(href='https://www.entrepreneur.com/article/311983', target='_blank', data-wow-delay='0.5s')
-            img(src='images/logos/entrepreneur.png', alt='Entrepreneur')
+            picture
+              source(type='image/webp' srcset='images/logos/entrepreneur.webp')
+              source(type='image/png' srcset='images/logos/entrepreneur.png')
+              img(src='images/logos/entrepreneur.png', alt='Entrepreneur')
     .section.interest-section
       .container
         .row
@@ -92,39 +145,69 @@ html(lang='en', dir='ltr')
           .col-md.d-flex.justify-content-end.align-items-center#keepers-grid
             .photo-grid
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-01.jpg')")
+                .photo-cell.keeper-one
                   div
-                    img(src='images/emojis/faces-cool.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-02.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-cool.webp')
+                      source(type='image/png' srcset='images/emojis/faces-cool.png')
+                      img(src='images/emojis/faces-cool.png', alt='')
+                .photo-cell.keeper-two
                   div
-                    img(src='images/emojis/faces-crack.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-03.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-crack.webp')
+                      source(type='image/png' srcset='images/emojis/faces-crack.png')
+                      img(src='images/emojis/faces-crack.png', alt='')
+                .photo-cell.keeper-three
                   div
-                    img(src='images/emojis/faces-cute.png', alt='')
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-cute.webp')
+                      source(type='image/png' srcset='images/emojis/faces-cute.png')
+                      img(src='images/emojis/faces-cute.png', alt='')
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-04.jpg')")
+                .photo-cell.keeper-four
                   div
-                    img(src='images/emojis/faces-nerd.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-05.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-nerd.webp')
+                      source(type='image/png' srcset='images/emojis/faces-nerd.png')
+                      img(src='images/emojis/faces-nerd.png', alt='')
+                .photo-cell.keeper-five
                   div
-                    img(src='images/emojis/faces-meh.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-06.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-meh.webp')
+                      source(type='image/png' srcset='images/emojis/faces-meh.png')
+                      img(src='images/emojis/faces-meh.png', alt='')
+                .photo-cell.keeper-six
                   div
-                    img(src='images/emojis/faces-good.png', alt='')
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-good.webp')
+                      source(type='image/png' srcset='images/emojis/faces-good.png')
+                      img(src='images/emojis/faces-good.png', alt='')
               .photo-row
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-07.jpg')")
+                .photo-cell.keeper-seven
                   div
-                    img(src='images/emojis/faces-wink.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-08.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-wink.webp')
+                      source(type='image/png' srcset='images/emojis/faces-wink.png')
+                      img(src='images/emojis/faces-wink.png', alt='')
+                .photo-cell.keeper-eight
                   div
-                    img(src='images/emojis/faces-xd.png', alt='')
-                .photo-cell(style="background-image: url('images/photos/keepers/keeper-09.jpg')")
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-xd.webp')
+                      source(type='image/png' srcset='images/emojis/faces-xd.png')
+                      img(src='images/emojis/faces-xd.png', alt='')
+                .photo-cell.keeper-nine
                   div
-                    img(src='images/emojis/faces-satisfy.png', alt='')
+                    picture
+                      source(type='image/webp' srcset='images/emojis/faces-satisfy.webp')
+                      source(type='image/png' srcset='images/emojis/faces-satisfy.png')
+                      img(src='images/emojis/faces-satisfy.png', alt='')
     .container
       .row.section
         .col-md-6.d-flex.align-items-center.justify-content-center#services-photo
-          img(src='images/photos/services.png', alt='', style='width: 80%;')
+          picture
+              source(type='image/webp' srcset='images/photos/services.webp' style='width: 80%;')
+              source(type='image/png' srcset='images/photos/services.png' style='width: 80%;')
+              img(src='images/photos/services.png', alt='', style='width: 80%;')
         .col-md-6
           h2 El servicio que necesitas
           p
@@ -132,7 +215,7 @@ html(lang='en', dir='ltr')
             br
             br
             |             Agenda tu servicio 
-            b desde $80 por hora*
+            b desde $99 por hora*
             |  ó si lo requieres solicita un 
             b servicio exprés con sólo dos horas de anticipación**
             | .
@@ -172,3 +255,7 @@ html(lang='en', dir='ltr')
       	var autocomplete = new google.maps.places.Autocomplete(input, options);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+
+  include includes/intercom.pug
+  //- script(type='text/javascript').
+  //-   window.Intercom('show');

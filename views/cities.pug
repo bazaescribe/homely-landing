@@ -13,11 +13,13 @@ html
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
     script(src='javascripts/zones.json')
     script(src='javascripts/cities-render.js')
+    script(type='text/javascript').
+      !function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s);}(document);
 
   body(onload="renderizeCities()")
     include includes/navbar
 
-    .hero-section.d-flex.align-items-center(style="background-image: url('images/photos/cities-hero.jpg')")
+    .hero-section.d-flex.align-items-center.hero-background
       h1 Ciudades
 
     .container.section
@@ -40,3 +42,4 @@ html
       p.small Oblíganos (ง •̀_•́)ง
 
     include includes/footer.pug
+    include includes/intercom.pug

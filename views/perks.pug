@@ -21,7 +21,8 @@ html
           .col-lg-5.hero-card(style="")
             h3  Mucho más que limpiar tu casa
             p   Servicios asegurados, pagos encriptados y personal confiable son apenas algunos de los beneficios de limpiar tu hogar con nosotros.
-            button.btn.btn-main Quiero un servicio
+            a(href="https://servicios.homely.mx")
+              button.btn.btn-main Quiero un servicio
 
     .container.section
       .row
@@ -44,21 +45,30 @@ html
           .col-md-4
             .perk
               .image
-                img(src="images/icons/healt.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/healt.webp' style="width: 30%;")
+                  source(type='image/png' srcset='images/icons/healt.png' style="width: 30%;")
+                  img(src="images/icons/healt.png", style="width: 30%;", alt="")
               .content
                 h4 Keepers asegurados
                 p  Todos los keepers cuentan con un seguro de gastos médicos.
           .col-md-4
             .perk
               .image
-                img(src="images/icons/time.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/time.webp' style="width: 30%;")
+                  source(type='image/png' srcset='images/icons/time.png' style="width: 30%;")
+                  img(src="images/icons/time.png", style="width: 30%;", alt="")
               .content
                 h4 Pago justo por hora
                 p  Paga por el tiempo que dure tu servicio hasta que este haya concluido.
           .col-md-4
             .perk
               .image
-                img(src="images/icons/contract.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/contract.webp' style="width: 30%;")
+                  source(type='image/png' srcset='images/icons/contract.png' style="width: 30%;")
+                  img(src="images/icons/contract.png", style="width: 30%;", alt="")
               .content
                 h4 Sin contratos
                 p  Sólo los servicios que necesites, nosotros nos encargamos del resto.
@@ -66,21 +76,30 @@ html
           .col-md-4
             .perk
               .image
-                img(src="images/icons/help.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/help.webp' style="width: 30%;")
+                  source(type='image/png' srcset='images/icons/help.png' style="width: 30%;")
+                  img(src="images/icons/help.png", style="width: 30%;", alt="")
               .content
                 h4 Ayuda personalizada
                 p  Estamos contigo los 7 días de la semana para apoyarte en lo que necesites.
           .col-md-4
             .perk
               .image
-                img(src="images/icons/bill.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/bill.webp' style="width: 30%;")
+                  source(type='image/png' srcset='images/icons/bill.png' style="width: 30%;")
+                  img(src="images/icons/bill.png", style="width: 30%;", alt="")
               .content
                 h4 Facturas
                 p  Los keepers pueden generar comprobantes fiscales para todos los servicios.
           .col-md-4
             .perk
               .image
-                img(src="images/icons/safety.png", style="width: 30%;", alt="")
+                picture
+                  source(type='image/webp' srcset='images/icons/safety.webp' style="width: 30%;")
+                  source(type='image/png' srcset='images/icons/safety.png' style="width: 30%;")
+                  img(src="images/icons/safety.png", style="width: 30%;", alt="")
               .content
                 h4 Keepers confiables
                 p  Sólo 20% de los aplicantes aprueban nuestro estricto proceso de admisión.
@@ -95,10 +114,6 @@ html
               |  * Enviaremos un keeper diferente al de tu última visita.
               br
               |  ** El servicio de garantía sólo podrá ser asignado de Lunes a Viernes en cualquier horario.
-           
-    .container.section
-      .row.poster.bg-light
-        .col-md-8
-        .col-md-4
 
-    include includes/footer.pug    
+    include includes/footer.pug
+    include includes/intercom.pug    
