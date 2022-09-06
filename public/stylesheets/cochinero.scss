@@ -12,6 +12,7 @@
   --color-gray:    #3F444C;
   --color-silver:  #F4F7F9;
   --color-white:   #FFFFFF;
+  --color-grape:   #191053;
 }
 
 ::selection {
@@ -1504,6 +1505,10 @@ li{
 .keeper-container {
   display: flex;
   justify-content: space-between;
+}
+
+.bg-grape {
+  background: var(--color-grape) !important;
 }
 
 @media only screen and (max-width: 750px) {
