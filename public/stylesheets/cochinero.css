@@ -3,15 +3,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Zilla+Slab:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 :root {
-  --color-indigo:  #5F48F6;
-  --color-cream:   #FFFEEA;
-  --color-mint:    #2BEFB2;
-  --color-dolly:   #FCFC95;
-  --color-black:   #0E111F;
-  --color-gray:    #3F444C;
-  --color-silver:  #F4F7F9;
-  --color-white:   #FFFFFF;
-  --color-grape:   #191053; }
+  --color-indigo: #5f48f6;
+  --color-cream: #fffeea;
+  --color-mint: #2befb2;
+  --color-dolly: #fcfc95;
+  --color-black: #0e111f;
+  --color-gray: #3f444c;
+  --color-silver: #f4f7f9;
+  --color-white: #ffffff;
+  --color-grape: #191053; }
 
 ::selection {
   background: var(--color-dolly); }
@@ -103,7 +103,10 @@ html {
       font-size: 20px; }
     .webp h6 {
       font-size: 18px; } }
-  .webp textarea, .webp select, .webp input, .webp button {
+  .webp textarea,
+  .webp select,
+  .webp input,
+  .webp button {
     outline: none; }
   .webp .btn {
     border-radius: 0px;
@@ -174,7 +177,9 @@ html {
       .webp .row {
         padding: 0px 12px !important;
         margin-bottom: 16px !important; }
-      .webp .col-md-6, .webp .col-md-4, .webp .col-md {
+      .webp .col-md-6,
+      .webp .col-md-4,
+      .webp .col-md {
         padding: 40px 12px; }
       .webp .btn {
         width: 100%;
@@ -187,7 +192,7 @@ html {
     font-family: "Roboto slab", sans-serif;
     margin-bottom: 16px; }
   .webp .promocode::before {
-    content: 'Utiliza el código';
+    content: "Utiliza el código";
     color: var(--color-gray);
     font-size: 10px;
     text-transform: uppercase;
@@ -440,7 +445,7 @@ html {
   .webp .zone:hover {
     color: var(--color-indigo); }
   .webp .zone-city {
-    color: #F3F4F8;
+    color: #f3f4f8;
     font-size: 72px;
     font-weight: 900;
     width: 100%;
@@ -463,11 +468,11 @@ html {
     text-transform: uppercase; }
   .webp .infocard .image {
     height: 360px;
-    background: #2BEFB2;
+    background: #2befb2;
     margin-bottom: 20px; }
   .webp .offercard .image {
     height: 280px;
-    background: #2BEFB2;
+    background: #2befb2;
     margin-bottom: 20px; }
   .webp .logo-strip {
     display: flex;
@@ -565,7 +570,10 @@ p {
     font-size: 18px; } }
 
 /*====================================== MOLECULES =====================================*/
-textarea, select, input, button {
+textarea,
+select,
+input,
+button {
   outline: none; }
 
 .btn {
@@ -613,6 +621,7 @@ textarea, select, input, button {
   background: rgba(0, 0, 0, 0);
   font-weight: 700; }
 
+input[type="date"],
 input[type="text"] {
   height: 48px;
   border: 1px solid var(--color-silver);
@@ -652,7 +661,9 @@ li {
     padding-top: 0px;
     padding-bottom: 0px;
   }  */
-  .col-md-6, .col-md-4, .col-md {
+  .col-md-6,
+  .col-md-4,
+  .col-md {
     padding: 40px 12px; }
   .btn {
     width: 100%;
@@ -668,7 +679,7 @@ li {
   margin-bottom: 16px; }
 
 .promocode::before {
-  content: 'Utiliza el código';
+  content: "Utiliza el código";
   color: var(--color-gray);
   font-size: 10px;
   text-transform: uppercase;
@@ -989,7 +1000,7 @@ li {
   color: var(--color-indigo); }
 
 .zone-city {
-  color: #F3F4F8;
+  color: #f3f4f8;
   font-size: 72px;
   font-weight: 900;
   width: 100%;
@@ -1015,12 +1026,12 @@ li {
 /*** CARDS ***/
 .infocard .image {
   height: 360px;
-  background: #2BEFB2;
+  background: #2befb2;
   margin-bottom: 20px; }
 
 .offercard .image {
   height: 280px;
-  background: #2BEFB2;
+  background: #2befb2;
   margin-bottom: 20px; }
 
 .logo-strip {
@@ -1096,5 +1107,23 @@ li {
   .keeper-container {
     display: flex;
     flex-direction: column; } }
+
+.formKeeperPostulant {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+  .formKeeperPostulant #date {
+    display: none; }
+  .formKeeperPostulant input {
+    border-color: #e1e1e1; }
+  .formKeeperPostulant .info-container {
+    display: flex;
+    align-items: center; }
+    .formKeeperPostulant .info-container #info {
+      margin: 0;
+      color: red; }
+      .formKeeperPostulant .info-container #info .icon-info {
+        width: 1.8rem;
+        height: 1.8rem; }
 
 /*# sourceMappingURL=cochinero.css.map */
