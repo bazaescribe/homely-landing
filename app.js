@@ -74,6 +74,10 @@ app.get('/promotion', (req, res) => {
   res.render('promotion')
 });
 
+app.get('/thanks', (req, res) => {
+  res.render('thanks')
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

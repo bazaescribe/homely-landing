@@ -25,7 +25,7 @@ function handleSubmit() {
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then(() => {
-        info.innerHTML = `${icon} Tus datos fueron enviados, pronto estaremos en contacto contigo.`;
+        window.location.href = "/thanks";
         form.reset();
       })
       .catch(
