@@ -14,5 +14,8 @@
     "morgan": "1.10.0",
     "node-sass-middleware": "0.11.0",
     "pug": "3.0.0"
+  },
+  "engines": {
+    "node": "12.16.1"
   }
 }
