@@ -49,7 +49,7 @@ html
               form#dataForm.formKeeperPostulant
                 input(type="text" placeholder='Nombre completo' name='Nombre')#name
                 input#phone(type="text" name='Telefono' placeholder='Telefono')
-                input#yearOfBirth(type="date" name='Fecha-de-nacimiento' placeholder='Fecha de nacimiento')
+                input#yearOfBirth(type="text" name='Fecha-de-nacimiento' placeholder='Fecha de nacimiento' onfocus="(this.type='date')")
                 input#city(type="text" name='Delegacion' placeholder='Municipio')
                 input#date(type="text" name='Fecha-solicitud' value=new Date().toLocaleString())
                 
